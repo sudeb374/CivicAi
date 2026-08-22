@@ -34,3 +34,7 @@ build/
 
 # OS
 Thumbs.db
+
+# Large Datasets
+*.xlsx
+

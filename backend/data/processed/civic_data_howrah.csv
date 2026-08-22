@@ -1,0 +1,651 @@
+State,District,Subdistt,Town/Village,Name,Level,TOT_P,No_HH,TOT_M,TOT_F,P_LIT,P_ILL,TOT_WORK_P,Village Code,Village Name,Tap Water-Treated (Status A(1)/NA(2)),Power Supply For All Users (Status A(1)/NA(2)),Hospital Allopathic (Numbers),Govt Primary School (Status A(1)/NA(2)),Govt Secondary School (Status A(1)/NA(2)),Black Topped (pucca) Road (Status A(1)/NA(2)),Public Bus Service (Status A(1)/NA(2)),ATM (Status A(1)/NA(2)),Has_Hospital
+19,341,2398,332476,Dihi Bhursut,VILLAGE,4602,1070,2293,2309,3286,1316,1930,332476,Dihi Bhursut,True,True,0.0,True,False,True,False,False,False
+19,341,2398,332477,Asanda,VILLAGE,3740,825,1920,1820,2856,884,1436,332477,Asanda,True,True,0.0,True,True,True,False,False,False
+19,341,2398,332478,Rampur,VILLAGE,4765,1118,2481,2284,3413,1352,1960,332478,Rampur,True,True,0.0,True,False,True,False,False,False
+19,341,2398,332479,Dakshin Rampur,VILLAGE,1375,329,695,680,988,387,552,332479,Dakshin Rampur,False,True,0.0,True,False,False,False,False,False
+19,341,2398,332480,Harili,VILLAGE,3798,941,1970,1828,2535,1263,1804,332480,Harili,False,True,0.0,True,True,False,False,False,False
+19,341,2398,332481,Piarapur,VILLAGE,1785,434,948,837,1247,538,758,332481,Piarapur,False,True,0.0,True,False,False,False,False,False
+19,341,2398,332482,Goja,VILLAGE,4203,1017,2146,2057,3321,882,1736,332482,Goja,True,True,0.0,True,True,True,False,False,False
+19,341,2398,332483,Sultanpur,VILLAGE,2697,623,1420,1277,1924,773,1315,332483,Sultanpur,False,False,0.0,True,False,True,False,False,False
+19,341,2398,332484,Sitapur,VILLAGE,2451,550,1271,1180,1714,737,1139,332484,Sitapur,False,False,0.0,True,False,False,False,False,False
+19,341,2398,332485,Khempur,VILLAGE,1415,314,749,666,1096,319,584,332485,Khempur,False,True,0.0,True,False,False,False,False,False
+19,341,2398,332486,Baira Kurchi,VILLAGE,1185,287,616,569,964,221,453,332486,Baira Kurchi,False,True,0.0,True,False,True,False,False,False
+19,341,2398,332487,Khalatpur,VILLAGE,3776,628,2040,1736,2953,823,1099,332487,Khalatpur,True,True,0.0,True,True,True,False,False,False
+19,341,2398,332488,Ghola,VILLAGE,2369,544,1181,1188,1808,561,1078,332488,Ghola,True,True,0.0,True,False,True,False,False,False
+19,341,2398,332489,Harihar Dwitiya,VILLAGE,1580,361,832,748,1195,385,635,332489,Harihar Dwitiya,False,True,0.0,True,False,False,False,False,False
+19,341,2398,332490,Kurchi Binodbati,VILLAGE,6522,1561,3341,3181,4639,1883,3158,332490,Kurchi Binodbati,True,True,0.0,True,False,True,False,False,False
+19,341,2398,332491,Pratap Chak,VILLAGE,1090,270,536,554,817,273,465,332491,Pratap Chak,False,True,0.0,True,False,True,False,False,False
+19,341,2398,332492,Udaynarayanpur,VILLAGE,1575,360,788,787,1298,277,690,332492,Udaynarayanpur,False,True,0.0,True,True,False,False,False,False
+19,341,2398,332493,Sibpur,VILLAGE,4965,1056,2557,2408,3766,1199,2087,332493,Sibpur,True,True,0.0,True,True,True,False,False,False
+19,341,2398,332494,Etarai,VILLAGE,1689,417,886,803,1186,503,753,332494,Etarai,True,True,0.0,True,False,True,False,False,False
+19,341,2398,332495,Khorda Etarai,VILLAGE,809,188,438,371,569,240,294,332495,Khorda Etarai,False,True,0.0,True,False,True,False,False,False
+19,341,2398,332496,Pancharul,VILLAGE,6678,1558,3452,3226,4714,1964,2854,332496,Pancharul,True,True,1.0,True,True,True,True,False,True
+19,341,2398,332497,Uttar Harishpur,VILLAGE,4152,987,2148,2004,2584,1568,1780,332497,Uttar Harishpur,True,True,0.0,True,True,True,False,False,False
+19,341,2398,332498,Kakraipota,VILLAGE,2336,565,1200,1136,1917,419,1011,332498,Kakraipota,True,True,0.0,True,True,True,False,False,False
+19,341,2398,332499,Subal Chak,VILLAGE,1477,369,769,708,1170,307,651,332499,Subal Chak,True,True,0.0,True,False,True,False,False,False
+19,341,2398,332500,Uttar Manasri,VILLAGE,5555,1310,2874,2681,3459,2096,2094,332500,Uttar Manasri,False,True,0.0,True,True,True,False,False,False
+19,341,2398,332501,Abhirampur,VILLAGE,3796,879,1946,1850,2299,1497,1886,332501,Abhirampur,False,True,0.0,True,False,False,False,False,False
+19,341,2398,332502,Ray Chak,VILLAGE,309,71,159,150,200,109,125,332502,Ray Chak,True,False,0.0,False,False,False,False,False,False
+19,341,2398,332503,Dakshin Singti,VILLAGE,1233,280,629,604,814,419,516,332503,Dakshin Singti,True,True,0.0,True,False,False,False,False,False
+19,341,2398,332504,Kalikapur,VILLAGE,771,187,403,368,604,167,439,332504,Kalikapur,True,True,0.0,False,False,False,False,False,False
+19,341,2398,332505,Chak Baharampur,VILLAGE,992,204,514,478,805,187,486,332505,Chak Baharampur,True,True,0.0,True,False,False,False,False,False
+19,341,2398,332506,Purpat,VILLAGE,1031,208,538,493,747,284,570,332506,Purpat,True,True,0.0,True,False,False,False,False,False
+19,341,2398,332507,Kumirmora,VILLAGE,1997,424,1019,978,1517,480,779,332507,Kumirmora,False,False,0.0,True,False,False,False,False,False
+19,341,2398,332508,Sinti,VILLAGE,6324,1508,3242,3082,4632,1692,3181,332508,Sinti,False,False,0.0,True,False,False,False,False,False
+19,341,2398,332509,Rajapur,VILLAGE,1810,397,896,914,1263,547,780,332509,Rajapur,True,True,0.0,True,False,False,False,False,False
+19,341,2398,332510,Sibanipur,VILLAGE,1404,337,734,670,1059,345,690,332510,Sibanipur,True,True,0.0,True,False,True,True,False,False
+19,341,2398,332511,Jangalpara Belgram,VILLAGE,4975,1172,2547,2428,3776,1199,2028,332511,Jangalpara Belgram,True,True,1.0,True,False,True,False,True,True
+19,341,2398,332512,Senpur Dwitiya,VILLAGE,258,65,127,131,163,95,125,332512,Senpur Dwitiya,False,False,0.0,True,False,False,False,False,False
+19,341,2398,332513,Akna Dwitiya,VILLAGE,851,208,452,399,694,157,444,332513,Akna Dwitiya,False,True,0.0,True,False,False,False,False,False
+19,341,2398,332514,Chak Thakurani,VILLAGE,828,212,392,436,525,303,474,332514,Chak Thakurani,False,False,0.0,True,False,False,False,False,False
+19,341,2398,332515,Sonagachhi,VILLAGE,641,145,337,304,472,169,330,332515,Sonagachhi,False,True,0.0,True,False,False,False,False,False
+19,341,2398,332516,Joka,VILLAGE,2509,556,1293,1216,1865,644,1086,332516,Joka,False,True,0.0,True,False,True,False,False,False
+19,341,2398,332517,Jagalda,VILLAGE,906,219,463,443,650,256,376,332517,Jagalda,False,False,0.0,True,False,True,False,False,False
+19,341,2398,332518,Jaynagar,VILLAGE,2179,505,1113,1066,1622,557,1018,332518,Jaynagar,False,True,0.0,True,False,False,False,False,False
+19,341,2398,332519,Naranarayanpur Chak,VILLAGE,1179,276,596,583,870,309,574,332519,Naranarayanpur Chak,False,True,0.0,True,False,False,False,False,False
+19,341,2398,332520,Mansuka,VILLAGE,2583,583,1327,1256,1985,598,1181,332520,Mansuka,False,True,0.0,True,True,False,False,False,False
+19,341,2398,332521,Kumar Chak,VILLAGE,2515,540,1299,1216,1853,662,1096,332521,Kumar Chak,False,True,0.0,True,False,False,False,False,False
+19,341,2398,332522,Kismat Kanupat,VILLAGE,972,207,486,486,657,315,461,332522,Kismat Kanupat,True,True,0.0,True,False,False,False,False,False
+19,341,2398,332523,Kanupat,VILLAGE,2646,585,1362,1284,2117,529,975,332523,Kanupat,True,True,0.0,True,True,False,False,False,False
+19,341,2398,332524,Debipur,VILLAGE,2497,591,1272,1225,1508,989,1048,332524,Debipur,True,False,0.0,True,False,False,False,False,False
+19,341,2398,332525,Dakshin Manshri,VILLAGE,2609,575,1351,1258,1659,950,1161,332525,Dakshin Manshri,False,False,0.0,True,False,True,False,False,False
+19,341,2398,332526,Chand Chak,VILLAGE,2748,596,1388,1360,1600,1148,1241,332526,Chand Chak,True,False,0.0,True,False,False,False,False,False
+19,341,2398,332527,Sonatala,VILLAGE,5093,1169,2640,2453,3846,1247,2036,332527,Sonatala,True,True,0.0,True,False,False,False,False,False
+19,341,2398,332528,Gar Bhabanipur,VILLAGE,1359,328,695,664,975,384,570,332528,Gar Bhabanipur,False,False,0.0,True,True,True,True,False,False
+19,341,2398,332529,Bhabanipur,VILLAGE,1694,370,846,848,1429,265,699,332529,Bhabanipur,False,True,0.0,True,True,True,False,False,False
+19,341,2398,332530,Chitrasenpur,VILLAGE,1784,396,909,875,1434,350,690,332530,Chitrasenpur,False,True,0.0,True,False,True,False,False,False
+19,341,2398,332531,Kansona,VILLAGE,1713,394,898,815,1249,464,670,332531,Kansona,False,False,0.0,True,False,False,False,False,False
+19,341,2398,332532,Bajeprotap,VILLAGE,1341,295,699,642,882,459,477,332532,Bajeprotap,False,True,0.0,True,False,False,False,False,False
+19,341,2398,332533,Pratapnarayanpur,VILLAGE,1277,310,665,612,960,317,587,332533,Pratapnarayanpur,True,True,0.0,True,True,False,False,False,False
+19,341,2398,332534,Kultikari,VILLAGE,2111,505,1096,1015,1265,846,715,332534,Kultikari,False,True,0.0,True,False,False,False,False,False
+19,341,2398,332535,Raghunathpur,VILLAGE,1643,387,838,805,1287,356,669,332535,Raghunathpur,False,True,0.0,True,True,False,False,False,False
+19,341,2398,332536,Bedhi Chandrapur,VILLAGE,5290,1135,2671,2619,3972,1318,1865,332536,Bedhi Chandrapur,True,True,0.0,True,True,False,False,False,False
+19,341,2398,332537,Gumgar,VILLAGE,1675,383,878,797,1245,430,648,332537,Gumgar,False,False,0.0,True,False,False,False,False,False
+19,341,2398,332538,Peruhareshpur,VILLAGE,5892,1345,3011,2881,4441,1451,2396,332538,Peruhareshpur,True,True,0.0,True,True,False,False,False,False
+19,341,2398,332539,Krishna Chak,VILLAGE,2503,567,1284,1219,1933,570,982,332539,Krishna Chak,True,False,0.0,True,False,True,False,False,False
+19,341,2398,332540,Thakurani Chak,VILLAGE,2643,648,1355,1288,2076,567,1213,332540,Thakurani Chak,True,True,0.0,True,True,True,False,False,False
+19,341,2398,332541,Mallik Chak,VILLAGE,1390,318,731,659,960,430,664,332541,Mallik Chak,True,True,0.0,True,False,False,False,False,False
+19,341,2398,332542,Narikel Beria,VILLAGE,4231,996,2136,2095,3115,1116,1912,332542,Narikel Beria,True,True,0.0,True,False,False,True,False,False
+19,341,2398,332543,Khila,VILLAGE,3540,812,1823,1717,2844,696,1424,332543,Khila,True,True,0.0,True,True,True,False,False,False
+19,341,2398,332544,Gauranga Chak,VILLAGE,1511,357,774,737,1240,271,608,332544,Gauranga Chak,True,False,0.0,True,True,True,True,False,False
+19,341,2398,332545,Paliara,VILLAGE,3643,886,1827,1816,2722,921,1679,332545,Paliara,True,True,0.0,True,False,False,False,False,False
+19,341,2398,332546,Shibnarayan Chak,VILLAGE,3350,711,1682,1668,2502,848,1391,332546,Shibnarayan Chak,True,False,0.0,True,False,False,False,False,False
+19,341,2398,332547,Nazarkhan,VILLAGE,1544,348,784,760,1067,477,626,332547,Nazarkhan,True,True,0.0,True,False,True,False,False,False
+19,341,2398,332548,Par Radhanagar,VILLAGE,4343,953,2226,2117,3044,1299,1804,332548,Par Radhanagar,True,True,0.0,True,False,True,False,False,False
+19,341,2398,332549,Kamal Chak,VILLAGE,2633,585,1394,1239,2068,565,1054,332549,Kamal Chak,False,False,0.0,True,True,False,False,False,False
+19,341,2398,332550,Nimdangi,VILLAGE,831,176,437,394,687,144,326,332550,Nimdangi,False,True,0.0,True,False,False,False,False,False
+19,341,2399,332551,Nakubar,VILLAGE,4453,1004,2335,2118,3289,1164,1606,332551,Nakubar,False,True,0.0,True,True,True,False,False,False
+19,341,2399,332552,Boalia,VILLAGE,1424,328,710,714,1031,393,470,332552,Boalia,False,True,0.0,True,False,True,False,False,False
+19,341,2399,332553,Jhikhira,VILLAGE,5421,1243,2748,2673,4239,1182,2077,332553,Jhikhira,False,True,0.0,True,True,True,False,False,False
+19,341,2399,332554,Chingrajola,VILLAGE,4974,1067,2569,2405,3367,1607,1732,332554,Chingrajola,False,False,0.0,True,True,False,False,False,False
+19,341,2399,332555,Ghardubra,VILLAGE,1253,273,630,623,962,291,445,332555,Ghardubra,False,False,0.0,True,False,False,False,False,False
+19,341,2399,332556,Rautara,VILLAGE,3730,869,1896,1834,2721,1009,1428,332556,Rautara,False,True,0.0,True,False,True,True,False,False
+19,341,2399,332557,Ranjoybar,VILLAGE,3033,612,1558,1475,1856,1177,1078,332557,Ranjoybar,False,False,0.0,True,False,True,False,False,False
+19,341,2399,332558,Chak Kundalia,VILLAGE,993,226,521,472,564,429,405,332558,Chak Kundalia,False,False,0.0,True,False,False,False,False,False
+19,341,2399,332559,Amragari,VILLAGE,3271,657,1673,1598,2560,711,1158,332559,Amragari,False,True,1.0,True,True,False,False,False,True
+19,341,2399,332560,Ghanashyam Chak,VILLAGE,322,55,152,170,251,71,85,332560,Ghanashyam Chak,False,True,0.0,True,False,False,False,False,False
+19,341,2399,332561,Chak Janardan,VILLAGE,1298,261,693,605,978,320,666,332561,Chak Janardan,False,True,0.0,True,False,False,False,False,False
+19,341,2399,332562,Kalasdihi,VILLAGE,530,117,267,263,260,270,192,332562,Kalasdihi,False,False,0.0,True,False,False,False,False,False
+19,341,2399,332563,Kakrol,VILLAGE,5258,1223,2718,2540,3509,1749,2035,332563,Kakrol,False,True,0.0,True,True,False,False,False,False
+19,341,2399,332564,Shibgachhia,VILLAGE,2992,700,1526,1466,1997,995,1098,332564,Shibgachhia,False,False,0.0,True,False,False,False,False,False
+19,341,2399,332565,Marayachak,VILLAGE,679,145,344,335,448,231,234,332565,Marayachak,False,False,0.0,True,False,False,False,False,False
+19,341,2399,332566,Uttar Bhatora,VILLAGE,5370,1128,2779,2591,3477,1893,1962,332566,Uttar Bhatora,False,True,0.0,True,True,False,False,False,False
+19,341,2399,332567,Dakshin Bhatora,VILLAGE,8854,1757,4552,4302,6871,1983,3212,332567,Dakshin Bhatora,False,True,0.0,True,True,False,False,False,False
+19,341,2399,332568,Hatgachha,VILLAGE,1928,343,1013,915,1418,510,632,332568,Hatgachha,False,True,0.0,True,False,False,False,False,False
+19,341,2399,332569,Beral,VILLAGE,1555,295,818,737,1045,510,659,332569,Beral,False,True,0.0,True,False,False,False,False,False
+19,341,2399,332570,Chitnan,VILLAGE,4757,985,2508,2249,3426,1331,1715,332570,Chitnan,False,True,0.0,True,True,False,False,False,False
+19,341,2399,332571,Mirgram,VILLAGE,1666,306,856,810,1238,428,495,332571,Mirgram,False,True,0.0,True,False,False,False,False,False
+19,341,2399,332572,Kulia,VILLAGE,1292,282,666,626,883,409,589,332572,Kulia,False,True,0.0,True,False,False,False,False,False
+19,341,2399,332573,Solbaga,VILLAGE,2802,605,1416,1386,1754,1048,1028,332573,Solbaga,False,True,0.0,True,False,False,False,False,False
+19,341,2399,332574,Takipara,VILLAGE,2591,545,1340,1251,1993,598,814,332574,Takipara,False,True,0.0,True,False,False,False,False,False
+19,341,2399,332575,Ajangachhi,VILLAGE,3984,798,2031,1953,2917,1067,1267,332575,Ajangachhi,False,True,0.0,True,True,True,False,False,False
+19,341,2399,332576,Nignan,VILLAGE,1870,364,963,907,1367,503,574,332576,Nignan,False,True,0.0,True,False,False,False,False,False
+19,341,2399,332577,Dhanyaghari,VILLAGE,3780,823,1899,1881,2640,1140,1573,332577,Dhanyaghari,False,True,0.0,True,False,True,False,False,False
+19,341,2399,332578,Fatik Beria,VILLAGE,629,148,336,293,345,284,183,332578,Fatik Beria,False,True,0.0,True,False,False,False,False,False
+19,341,2399,332579,Hio,VILLAGE,1727,360,902,825,1330,397,708,332579,Hio,False,False,0.0,True,False,False,False,False,False
+19,341,2399,332580,Dakshin Khalna,VILLAGE,5701,1219,2871,2830,3971,1730,1960,332580,Dakshin Khalna,False,True,0.0,True,True,True,True,False,False
+19,341,2399,332581,Purbba Khalan,VILLAGE,2413,553,1274,1139,1920,493,880,332581,Purbba Khalan,False,True,0.0,True,False,True,True,False,False
+19,341,2399,332582,Uttar Khalna,VILLAGE,2270,521,1165,1105,1603,667,814,332582,Uttar Khalna,False,False,0.0,True,True,True,True,False,False
+19,341,2399,332583,Khajur Daha,VILLAGE,1285,275,682,603,881,404,899,332583,Khajur Daha,False,False,0.0,True,False,False,False,False,False
+19,341,2399,332584,Jhamtia,VILLAGE,4879,979,2530,2349,3293,1586,1751,332584,Jhamtia,False,True,0.0,True,True,True,False,False,False
+19,341,2399,332585,Khari Geria,VILLAGE,2318,522,1225,1093,1160,1158,826,332585,Khari Geria,False,True,0.0,True,False,False,False,False,False
+19,341,2399,332586,Kasmali,VILLAGE,4662,1019,2415,2247,2953,1709,1856,332586,Kasmali,False,True,0.0,True,True,True,False,False,False
+19,341,2399,332587,Kamar Khola,VILLAGE,828,162,448,380,470,358,304,332587,Kamar Khola,False,False,0.0,True,False,True,False,False,False
+19,341,2399,332588,Paschim Jaypur,VILLAGE,0,0,0,0,0,0,0,332588,Paschim Jaypur,False,,0.0,,,False,False,False,False
+19,341,2399,332589,Madhya Jaypur,VILLAGE,1253,258,640,613,715,538,451,332589,Madhya Jaypur,False,False,0.0,True,False,False,False,False,False
+19,341,2399,332590,Dakshin Jaypur,VILLAGE,912,206,475,437,543,369,284,332590,Dakshin Jaypur,False,False,0.0,True,False,False,False,False,False
+19,341,2399,332591,Jaypur,VILLAGE,9023,1982,4578,4445,6960,2063,3350,332591,Jaypur,False,True,0.0,True,True,True,False,False,False
+19,341,2399,332592,Binalakrishnabati,VILLAGE,2005,447,991,1014,1564,441,728,332592,Binalakrishnabati,False,False,0.0,True,True,True,True,False,False
+19,341,2399,332593,Saoraberia,VILLAGE,2534,537,1295,1239,1913,621,953,332593,Saoraberia,False,False,0.0,True,False,True,False,False,False
+19,341,2399,332594,Hanidaha,VILLAGE,1624,390,832,792,1179,445,755,332594,Hanidaha,False,False,0.0,True,False,False,False,False,False
+19,341,2399,332595,Nischintapur,VILLAGE,2470,538,1277,1193,1817,653,1138,332595,Nischintapur,False,False,0.0,True,False,False,False,False,False
+19,341,2399,332596,Thalia,VILLAGE,2763,636,1417,1346,2170,593,1198,332596,Thalia,False,True,0.0,True,True,True,False,False,False
+19,341,2399,332597,Bhateghari,VILLAGE,2499,595,1285,1214,1710,789,1060,332597,Bhateghari,False,True,0.0,True,False,True,False,False,False
+19,341,2399,332598,Sehagari,VILLAGE,3063,731,1621,1442,2309,754,1177,332598,Sehagari,False,True,0.0,True,False,True,False,False,False
+19,341,2399,332599,Saoria,VILLAGE,3150,723,1611,1539,2071,1079,1114,332599,Saoria,False,False,0.0,True,False,True,False,False,False
+19,341,2399,332600,Kamargaria,VILLAGE,2296,525,1158,1138,1579,717,820,332600,Kamargaria,False,False,0.0,True,False,True,False,False,False
+19,341,2399,332601,Dhaipur,VILLAGE,2515,545,1314,1201,1890,625,1080,332601,Dhaipur,False,True,0.0,True,False,True,False,False,False
+19,341,2399,332602,Mainan,VILLAGE,2859,604,1418,1441,2037,822,1339,332602,Mainan,False,True,0.0,True,False,False,False,False,False
+19,341,2399,332603,Bargazipur,VILLAGE,596,141,301,295,509,87,208,332603,Bargazipur,False,False,0.0,True,True,False,False,False,False
+19,341,2399,332604,Kalbansh,VILLAGE,2071,491,1087,984,1694,377,781,332604,Kalbansh,False,True,0.0,True,False,False,False,False,False
+19,341,2399,332605,Khariop,VILLAGE,4806,1112,2474,2332,3789,1017,2045,332605,Khariop,False,True,0.0,True,True,True,False,False,False
+19,341,2399,332606,Betai,VILLAGE,2969,724,1539,1430,2395,574,1166,332606,Betai,False,True,0.0,True,False,True,False,False,False
+19,341,2399,332607,Jayanti,VILLAGE,2068,496,1025,1043,1599,469,829,332607,Jayanti,False,False,0.0,True,False,True,False,False,False
+19,341,2399,332608,Nawapara,VILLAGE,5815,1309,2927,2888,4407,1408,2165,332608,Nawapara,False,True,0.0,True,True,True,False,False,False
+19,341,2399,332609,Narit,VILLAGE,3515,820,1835,1680,2353,1162,1311,332609,Narit,False,True,0.0,True,True,True,True,False,False
+19,341,2399,332610,Sirol,VILLAGE,2340,468,1209,1131,1627,713,1000,332610,Sirol,False,False,0.0,True,False,False,False,False,False
+19,341,2399,332611,Kusberia,VILLAGE,4223,975,2249,1974,2922,1301,1677,332611,Kusberia,False,False,0.0,True,True,True,False,False,False
+19,341,2399,332612,Sarda,VILLAGE,5677,1145,2901,2776,3752,1925,1828,332612,Sarda,False,False,0.0,True,True,True,False,False,False
+19,341,2399,332613,Sital Chak,VILLAGE,1828,410,945,883,1461,367,735,332613,Sital Chak,False,False,0.0,True,True,True,False,False,False
+19,341,2399,332614,Bankura,VILLAGE,2036,428,1059,977,1660,376,742,332614,Bankura,False,False,0.0,True,False,False,False,False,False
+19,341,2399,332615,Tajpur,VILLAGE,6806,1466,3457,3349,5053,1753,2548,332615,Tajpur,False,True,0.0,True,True,True,False,False,False
+19,341,2399,332616,Mahishamuri,VILLAGE,1790,414,938,852,1478,312,695,332616,Mahishamuri,False,False,0.0,True,True,False,False,False,False
+19,341,2400,332620,Damodar Nadirchar,VILLAGE,579,132,303,276,463,116,212,332620,Damodar Nadirchar,True,False,0.0,False,False,False,False,False,False
+19,341,2400,332621,Fatepur,VILLAGE,2840,638,1438,1402,2067,773,1148,332621,Fatepur,False,False,0.0,True,False,True,False,False,False
+19,341,2400,332622,Khardaha,VILLAGE,5535,1207,2870,2665,4029,1506,1969,332622,Khardaha,False,False,0.0,True,True,False,False,False,False
+19,341,2400,332623,Gobinda Chak,VILLAGE,1582,368,824,758,1232,350,590,332623,Gobinda Chak,False,False,0.0,True,False,False,False,False,False
+19,341,2400,332624,Tentuliapara,VILLAGE,1633,358,870,763,1111,522,717,332624,Tentuliapara,False,False,0.0,True,False,False,False,False,False
+19,341,2400,332625,Sonamui,VILLAGE,4155,959,2190,1965,3243,912,1519,332625,Sonamui,False,False,0.0,True,True,False,False,False,False
+19,341,2400,332626,Khasnan,VILLAGE,3221,637,1678,1543,2212,1009,991,332626,Khasnan,False,False,0.0,True,False,True,False,False,False
+19,341,2400,332627,Purba Gazipur,VILLAGE,6720,1420,3470,3250,4347,2373,2238,332627,Purba Gazipur,True,False,0.0,True,True,True,False,False,False
+19,341,2400,332628,Ranapara,VILLAGE,2420,471,1279,1141,1827,593,872,332628,Ranapara,True,False,0.0,True,False,True,False,False,False
+19,341,2400,332629,Serajbati,VILLAGE,2787,680,1391,1396,1863,924,965,332629,Serajbati,True,True,0.0,True,False,False,False,True,False
+19,341,2400,332630,Madaria,VILLAGE,4024,968,2051,1973,3147,877,1522,332630,Madaria,True,False,0.0,True,True,False,False,False,False
+19,341,2400,332631,Mallagram,VILLAGE,1821,430,950,871,1460,361,656,332631,Mallagram,True,True,1.0,True,False,False,False,False,True
+19,341,2400,332632,Chhota Mahara,VILLAGE,2132,478,1096,1036,1620,512,695,332632,Chhota Mahara,True,False,0.0,True,True,False,False,False,False
+19,341,2400,332633,Bara Mahara,VILLAGE,1887,440,962,925,1441,446,616,332633,Bara Mahara,False,False,0.0,True,True,True,False,False,False
+19,341,2400,332634,Kotalpara,VILLAGE,1602,346,754,848,1253,349,506,332634,Kotalpara,False,False,0.0,True,False,False,False,False,False
+19,341,2400,332635,Chakpota,VILLAGE,2299,526,1158,1141,1950,349,898,332635,Chakpota,False,False,0.0,True,False,False,False,False,False
+19,341,2400,332636,Sameshwar,VILLAGE,1847,464,942,905,1278,569,719,332636,Sameshwar,False,False,0.0,True,False,True,False,False,False
+19,341,2400,332637,Kalikata,VILLAGE,1651,395,827,824,1363,288,577,332637,Kalikata,False,False,0.0,True,False,True,False,False,False
+19,341,2400,332638,Raspur,VILLAGE,3073,722,1552,1521,2353,720,1072,332638,Raspur,False,False,0.0,True,True,True,False,False,False
+19,341,2400,332639,Kumaria,VILLAGE,2845,695,1430,1415,1881,964,1023,332639,Kumaria,False,False,0.0,True,False,True,False,False,False
+19,341,2400,332640,Putkhali,VILLAGE,588,134,305,283,500,88,197,332640,Putkhali,False,False,0.0,True,False,False,False,False,False
+19,341,2400,332641,Khaira,VILLAGE,1260,298,662,598,764,496,568,332641,Khaira,False,False,0.0,True,True,True,False,False,False
+19,341,2400,332642,Sarpai,VILLAGE,888,202,456,432,448,440,323,332642,Sarpai,False,False,0.0,True,False,False,False,False,False
+19,341,2400,332643,Bhojan,VILLAGE,2474,557,1286,1188,1864,610,934,332643,Bhojan,False,False,0.0,True,False,True,False,False,False
+19,341,2400,332644,Begua,VILLAGE,1263,306,643,620,1012,251,594,332644,Begua,False,False,0.0,True,True,True,False,False,False
+19,341,2400,332645,Saibana,VILLAGE,648,146,330,318,512,136,266,332645,Saibana,False,False,0.0,True,False,True,False,False,False
+19,341,2400,332646,Purba Bajepratap,VILLAGE,1615,393,832,783,1231,384,652,332646,Purba Bajepratap,False,False,0.0,True,False,False,False,False,False
+19,341,2400,332647,Balichak,VILLAGE,3304,788,1692,1612,2412,892,1224,332647,Balichak,False,False,0.0,True,True,False,False,False,False
+19,341,2400,332648,Dhurkhali,VILLAGE,3195,726,1632,1563,2475,720,1311,332648,Dhurkhali,False,False,0.0,True,False,True,False,False,False
+19,341,2400,332649,Banuchak,VILLAGE,1119,227,565,554,805,314,404,332649,Banuchak,False,False,0.0,True,False,True,False,False,False
+19,341,2400,332650,Chaltakhali,VILLAGE,3366,727,1733,1633,2291,1075,1332,332650,Chaltakhali,False,False,0.0,True,False,True,False,False,False
+19,341,2400,332651,Manikara,VILLAGE,2797,551,1409,1388,2052,745,946,332651,Manikara,True,True,0.0,True,True,True,True,False,False
+19,341,2400,332652,Purash,VILLAGE,2150,447,1081,1069,1581,569,806,332652,Purash,False,True,0.0,True,True,True,False,False,False
+19,341,2400,332653,Ghuteghari,VILLAGE,302,62,151,151,198,104,76,332653,Ghuteghari,False,False,0.0,False,False,False,False,False,False
+19,341,2400,332654,Sahapur,VILLAGE,0,0,0,0,0,0,0,332654,Sahapur,,,0.0,,,,,,False
+19,341,2400,332655,Mato,VILLAGE,1920,446,946,974,1324,596,672,332655,Mato,True,True,0.0,True,True,False,False,False,False
+19,341,2400,332656,Barue,VILLAGE,3850,693,2016,1834,2771,1079,1505,332656,Barue,True,True,0.0,True,False,False,False,False,False
+19,341,2400,332657,Ghoradaha,VILLAGE,3515,700,1814,1701,2496,1019,1220,332657,Ghoradaha,True,True,0.0,True,False,True,False,False,False
+19,341,2400,332658,Habla,VILLAGE,1175,269,614,561,635,540,417,332658,Habla,True,True,0.0,True,False,False,False,False,False
+19,341,2400,332659,Pearapur,VILLAGE,1178,246,635,543,854,324,431,332659,Pearapur,True,True,0.0,True,False,False,False,False,False
+19,341,2400,332660,Bhetkepara,VILLAGE,2422,484,1275,1147,1889,533,790,332660,Bhetkepara,True,True,0.0,True,False,False,False,False,False
+19,341,2400,332661,Debandi,VILLAGE,3524,819,1794,1730,2721,803,1322,332661,Debandi,False,True,0.0,True,True,False,False,False,False
+19,341,2400,332662,Kadua,VILLAGE,1675,374,870,805,1223,452,618,332662,Kadua,False,False,0.0,True,False,False,False,False,False
+19,341,2400,332663,Anule,VILLAGE,3196,713,1654,1542,2527,669,1179,332663,Anule,False,False,0.0,True,True,False,False,False,False
+19,341,2400,332664,Baneshwarpur,VILLAGE,1748,421,870,878,1424,324,607,332664,Baneshwarpur,False,True,0.0,True,True,False,False,False,False
+19,341,2400,332665,Uttar Ramchandrapur,VILLAGE,1985,447,1007,978,1519,466,811,332665,Uttar Ramchandrapur,True,False,0.0,True,True,True,True,False,False
+19,341,2400,332666,Sarpota,VILLAGE,1042,243,553,489,775,267,377,332666,Sarpota,False,False,0.0,True,False,False,False,False,False
+19,341,2400,332667,Chalunia,VILLAGE,1449,307,759,690,935,514,724,332667,Chalunia,False,True,0.0,True,False,False,False,False,False
+19,341,2400,332668,Darapur,VILLAGE,1024,187,526,498,776,248,330,332668,Darapur,False,False,0.0,True,False,False,False,False,False
+19,341,2400,332669,Jotsadar,VILLAGE,33,7,19,14,23,10,11,332669,Jotsadar,False,False,0.0,False,False,False,False,,False
+19,341,2400,332670,Ratanpota,VILLAGE,838,199,442,396,687,151,320,332670,Ratanpota,False,False,0.0,True,False,False,False,False,False
+19,341,2400,332671,Kashtasangara,VILLAGE,2282,501,1171,1111,1693,589,816,332671,Kashtasangara,False,False,0.0,True,False,False,False,False,False
+19,341,2400,332672,Khosalpur,VILLAGE,3922,869,1996,1926,2858,1064,1414,332672,Khosalpur,True,False,0.0,True,True,True,False,False,False
+19,341,2400,332673,Kasra,VILLAGE,2979,558,1507,1472,2148,831,1003,332673,Kasra,False,False,0.0,True,False,True,False,False,False
+19,341,2400,332674,Kurit,VILLAGE,3595,769,1873,1722,2704,891,1254,332674,Kurit,True,False,0.0,True,False,False,False,False,False
+19,341,2400,332675,Ramchandrapur Dwityakhanda,VILLAGE,435,103,232,203,243,192,207,332675,Ramchandrapur Dwityakhanda,False,False,0.0,True,False,False,False,False,False
+19,341,2400,332676,Jotkalyan,VILLAGE,3237,745,1640,1597,2527,710,1118,332676,Jotkalyan,True,False,0.0,True,True,False,False,False,False
+19,341,2400,332677,Guzarpur,VILLAGE,4680,1110,2382,2298,2935,1745,1865,332677,Guzarpur,True,False,0.0,True,False,True,True,False,False
+19,341,2400,332678,Mahishgoha,VILLAGE,2520,502,1306,1214,1622,898,733,332678,Mahishgoha,False,False,0.0,True,False,False,False,False,False
+19,341,2400,332679,Chatra,VILLAGE,3040,544,1551,1489,2066,974,776,332679,Chatra,False,False,0.0,True,False,False,False,False,False
+19,341,2400,332680,Dakshin Harishpur,VILLAGE,3794,757,1952,1842,2432,1362,1320,332680,Dakshin Harishpur,False,False,0.0,True,False,False,True,False,False
+19,341,2400,332681,Dadpur,VILLAGE,521,118,276,245,434,87,199,332681,Dadpur,True,True,0.0,True,False,True,False,False,False
+19,341,2400,332682,Dakshin Ramchandrapur,VILLAGE,1834,446,935,899,1491,343,652,332682,Dakshin Ramchandrapur,True,True,0.0,True,False,True,False,False,False
+19,341,2400,332683,Panpur,VILLAGE,1651,377,834,817,1272,379,631,332683,Panpur,True,True,0.0,True,True,True,True,False,False
+19,341,2400,332684,Serpur,VILLAGE,3666,874,1881,1785,1958,1708,1570,332684,Serpur,True,True,0.0,True,False,True,True,False,False
+19,341,2400,332685,Madhyakul,VILLAGE,1888,439,977,911,1135,753,707,332685,Madhyakul,False,True,0.0,True,False,False,False,False,False
+19,341,2400,332686,Ghoshpur,VILLAGE,3598,792,1866,1732,2609,989,1347,332686,Ghoshpur,True,True,0.0,True,False,False,False,False,False
+19,341,2400,332687,Chaksadar,VILLAGE,714,137,365,349,466,248,214,332687,Chaksadar,False,False,0.0,False,False,False,False,False,False
+19,341,2400,332688,Kazir Chak,VILLAGE,27,8,12,15,20,7,9,332688,Kazir Chak,False,False,0.0,False,False,False,False,False,False
+19,341,2400,332689,Mollar Chak,VILLAGE,239,57,126,113,176,63,81,332689,Mollar Chak,False,False,0.0,True,False,False,False,False,False
+19,341,2400,332690,Kumar Chak,VILLAGE,4884,1109,2454,2430,3595,1289,1726,332690,Kumar Chak,False,False,0.0,True,True,False,False,False,False
+19,341,2400,332691,Hafez Chak,VILLAGE,489,104,256,233,327,162,281,332691,Hafez Chak,False,False,0.0,True,True,False,True,False,False
+19,341,2400,332692,Janjali Chak,VILLAGE,1002,215,511,491,685,317,455,332692,Janjali Chak,False,False,0.0,True,True,False,False,False,False
+19,341,2401,332700,Ichhanagari,VILLAGE,4474,786,2288,2186,3160,1314,1721,332700,Ichhanagari,False,True,0.0,True,False,True,True,False,False
+19,341,2401,332701,Jhingra,VILLAGE,1606,332,795,811,1193,413,512,332701,Jhingra,True,True,0.0,True,False,False,False,False,False
+19,341,2401,332702,Telihati,VILLAGE,2186,480,1070,1116,1526,660,854,332702,Telihati,False,True,0.0,True,False,False,False,False,False
+19,341,2401,332703,Sadipara,VILLAGE,644,129,318,326,441,203,241,332703,Sadipara,False,True,0.0,True,False,False,True,False,False
+19,341,2401,332704,Godaria,VILLAGE,1735,324,901,834,1065,670,562,332704,Godaria,False,True,0.0,True,False,False,True,False,False
+19,341,2401,332705,Jadupur,VILLAGE,1871,386,954,917,1403,468,693,332705,Jadupur,False,True,0.0,True,True,True,True,False,False
+19,341,2401,332706,Shibnandabati,VILLAGE,1078,232,561,517,948,130,390,332706,Shibnandabati,True,True,0.0,True,False,True,True,False,False
+19,341,2401,332707,Hafezpur,VILLAGE,1713,364,877,836,1132,581,595,332707,Hafezpur,False,True,0.0,True,False,False,False,False,False
+19,341,2401,332708,Naikuli,VILLAGE,1564,342,827,737,1150,414,600,332708,Naikuli,True,True,0.0,True,False,True,False,False,False
+19,341,2401,332709,Chandul,VILLAGE,1512,325,778,734,1093,419,530,332709,Chandul,False,True,0.0,True,False,False,False,False,False
+19,341,2401,332710,Goalpota,VILLAGE,1676,335,844,832,1247,429,665,332710,Goalpota,True,True,0.0,True,False,True,True,False,False
+19,341,2401,332711,Jagannathpur,VILLAGE,1567,280,822,745,1205,362,662,332711,Jagannathpur,False,True,0.0,True,False,False,False,False,False
+19,341,2401,332712,Chak Bishnupur,VILLAGE,1695,299,885,810,1164,531,693,332712,Chak Bishnupur,False,False,0.0,True,False,False,False,False,False
+19,341,2401,332713,Bamunpara,VILLAGE,5346,1081,2787,2559,3609,1737,2202,332713,Bamunpara,False,False,0.0,True,True,False,True,False,False
+19,341,2401,332714,Chak Sadat,VILLAGE,2940,538,1485,1455,1928,1012,953,332714,Chak Sadat,False,True,0.0,True,True,True,False,False,False
+19,341,2401,332715,Bhupatipur,VILLAGE,1578,294,821,757,1041,537,562,332715,Bhupatipur,False,False,0.0,True,False,False,True,False,False
+19,341,2401,332716,Nabasan,VILLAGE,1138,264,563,575,642,496,477,332716,Nabasan,False,False,0.0,True,False,False,True,False,False
+19,341,2401,332717,Krishnanandapur,VILLAGE,3091,596,1607,1484,1933,1158,1250,332717,Krishnanandapur,False,False,0.0,True,False,False,True,False,False
+19,341,2401,332718,Sekrahati,VILLAGE,3279,742,1659,1620,2469,810,1177,332718,Sekrahati,True,True,0.0,True,True,True,True,True,False
+19,341,2401,332719,Ramanathbati,VILLAGE,1686,365,836,850,1091,595,742,332719,Ramanathbati,False,False,0.0,True,False,True,False,False,False
+19,341,2401,332720,Pratappur Krishnabati,VILLAGE,1837,414,912,925,1202,635,745,332720,Pratappur Krishnabati,False,False,0.0,True,False,True,False,False,False
+19,341,2401,332721,Paikpara,VILLAGE,1372,308,715,657,929,443,498,332721,Paikpara,False,True,0.0,True,False,True,False,False,False
+19,341,2401,332722,Bhursit Bamunpara,VILLAGE,2320,483,1220,1100,1398,922,836,332722,Bhursit Bamunpara,False,True,0.0,True,True,True,False,False,False
+19,341,2401,332723,Ghanashyambati,VILLAGE,1607,321,845,762,1191,416,619,332723,Ghanashyambati,False,False,0.0,True,False,True,False,False,False
+19,341,2401,332724,Ballabhbati,VILLAGE,1075,243,547,528,893,182,381,332724,Ballabhbati,False,False,0.0,True,False,True,False,False,False
+19,341,2401,332725,Dhasa,VILLAGE,3140,630,1572,1568,1991,1149,1229,332725,Dhasa,False,True,0.0,True,False,True,False,False,False
+19,341,2401,332726,Narendrapur,VILLAGE,7416,1520,3790,3626,4944,2472,2636,332726,Narendrapur,False,True,0.0,True,False,False,True,False,False
+19,341,2401,332727,Shyampur,VILLAGE,2535,490,1318,1217,1203,1332,992,332727,Shyampur,False,False,0.0,True,False,False,True,False,False
+19,341,2401,332728,Gumadangi,VILLAGE,1526,306,809,717,913,613,448,332728,Gumadangi,False,True,0.0,True,True,False,True,False,False
+19,341,2401,332729,Dakshin Maju,VILLAGE,2195,472,1167,1028,1666,529,893,332729,Dakshin Maju,False,False,0.0,True,False,False,False,False,False
+19,341,2401,332730,Madhya Maju,VILLAGE,1082,223,563,519,695,387,383,332730,Madhya Maju,False,False,0.0,True,True,False,False,False,False
+19,341,2401,332731,Uttar Maju,VILLAGE,3691,839,1852,1839,2730,961,1403,332731,Uttar Maju,False,False,0.0,True,False,True,False,False,False
+19,341,2401,332732,Jadabbati,VILLAGE,2278,535,1161,1117,1599,679,974,332732,Jadabbati,False,True,0.0,True,False,True,False,False,False
+19,341,2401,332733,Santoshbati,VILLAGE,1077,239,543,534,818,259,416,332733,Santoshbati,False,False,0.0,True,False,False,False,False,False
+19,341,2401,332734,Moulgachhi,VILLAGE,1276,218,687,589,907,369,377,332734,Moulgachhi,False,False,0.0,True,False,False,False,False,False
+19,341,2401,332735,Hari Narayanpur,VILLAGE,1466,331,701,765,1082,384,593,332735,Hari Narayanpur,False,False,0.0,True,False,False,False,False,False
+19,341,2401,332736,Finga Gachhi,VILLAGE,1856,424,921,935,1451,405,630,332736,Finga Gachhi,False,False,0.0,True,False,False,False,False,False
+19,341,2401,332737,Marghurali,VILLAGE,2631,566,1373,1258,1820,811,891,332737,Marghurali,False,False,0.0,True,False,False,False,False,False
+19,341,2401,332738,Nimabalia,VILLAGE,2654,556,1378,1276,1960,694,1064,332738,Nimabalia,False,False,0.0,True,False,False,False,False,False
+19,341,2401,332739,Ranmahal Bhursut,VILLAGE,2068,496,1067,1001,1663,405,898,332739,Ranmahal Bhursut,False,False,0.0,True,False,False,False,False,False
+19,341,2401,332740,Ichhapur,VILLAGE,2954,691,1544,1410,2289,665,1271,332740,Ichhapur,False,True,0.0,True,True,False,True,False,False
+19,341,2401,332741,Tripurapur,VILLAGE,1107,248,568,539,842,265,398,332741,Tripurapur,False,True,0.0,True,False,False,False,False,False
+19,341,2401,332742,Nijbalia,VILLAGE,3933,944,1959,1974,3124,809,1490,332742,Nijbalia,False,True,0.0,True,False,True,False,False,False
+19,341,2401,332743,Badebalia,VILLAGE,1998,408,1069,929,1417,581,983,332743,Badebalia,False,False,0.0,True,False,True,False,False,False
+19,341,2401,332744,Rampur,VILLAGE,1642,349,840,802,1273,369,630,332744,Rampur,False,False,0.0,True,False,False,False,False,False
+19,341,2401,332745,Parbbatipur,VILLAGE,3530,692,1754,1776,2180,1350,1306,332745,Parbbatipur,False,False,0.0,True,False,False,True,False,False
+19,341,2401,332746,Uttar Santoshpur,VILLAGE,1151,252,578,573,580,571,533,332746,Uttar Santoshpur,False,True,0.0,True,False,False,False,False,False
+19,341,2401,332747,Madhya Santoshpur,VILLAGE,4738,1027,2397,2341,2593,2145,2135,332747,Madhya Santoshpur,False,True,0.0,True,True,False,True,False,False
+19,341,2401,332748,Sadatpur,VILLAGE,3216,695,1636,1580,2617,599,1259,332748,Sadatpur,True,True,0.0,True,False,False,True,False,False
+19,341,2401,332749,Sial Danga,VILLAGE,5673,1238,2905,2768,3767,1906,2369,332749,Sial Danga,False,True,0.0,True,True,False,False,False,False
+19,341,2401,332750,Kumarpur,VILLAGE,155,25,81,74,93,62,121,332750,Kumarpur,False,True,0.0,True,False,False,False,False,False
+19,341,2401,332751,Chak Patmura,VILLAGE,0,0,0,0,0,0,0,332751,Chak Patmura,,,0.0,,,,,,False
+19,341,2401,332752,Boharia,VILLAGE,4035,830,2001,2034,2486,1549,1845,332752,Boharia,False,True,0.0,True,False,True,False,False,False
+19,341,2401,332753,Siddheshwar,VILLAGE,4760,1082,2388,2372,3285,1475,1908,332753,Siddheshwar,False,True,0.0,True,True,True,False,False,False
+19,341,2401,332754,Fatik Gachhi,VILLAGE,2158,507,1117,1041,1697,461,817,332754,Fatik Gachhi,False,True,0.0,True,True,True,False,False,False
+19,341,2401,332755,Laskarpur,VILLAGE,8489,1852,4334,4155,5956,2533,3348,332755,Laskarpur,False,True,0.0,True,False,True,False,False,False
+19,341,2401,332756,Batan,VILLAGE,2111,477,1119,992,1525,586,1095,332756,Batan,False,True,0.0,True,False,True,False,False,False
+19,341,2401,332757,Gobindapur,VILLAGE,11665,2468,5991,5674,7551,4114,4608,332757,Gobindapur,False,False,0.0,True,True,True,False,False,False
+19,341,2401,332758,Nalda,VILLAGE,4161,862,2101,2060,3027,1134,1525,332758,Nalda,True,True,0.0,True,False,True,False,False,False
+19,341,2401,332759,Gauripur,VILLAGE,1756,361,892,864,1390,366,586,332759,Gauripur,True,False,0.0,True,True,True,False,False,False
+19,341,2401,332760,Dwipa,VILLAGE,4585,852,2382,2203,3339,1246,1464,332760,Dwipa,False,True,0.0,True,False,False,False,False,False
+19,341,2401,332761,Pulgusti,VILLAGE,5780,1196,2909,2871,4263,1517,1935,332761,Pulgusti,False,True,0.0,True,True,True,False,False,False
+19,341,2401,332762,Jalalsi,VILLAGE,2326,407,1228,1098,1751,575,686,332762,Jalalsi,True,True,0.0,True,False,True,False,False,False
+19,341,2401,332763,Makalhati,VILLAGE,3827,804,2008,1819,2969,858,1414,332763,Makalhati,False,False,0.0,True,False,True,False,False,False
+19,341,2401,332764,Mallikpur,VILLAGE,2034,416,1068,966,1392,642,718,332764,Mallikpur,True,True,0.0,True,False,False,False,False,False
+19,341,2401,332765,Islampur,VILLAGE,7813,1661,4021,3792,5220,2593,3091,332765,Islampur,True,True,0.0,True,True,True,True,False,False
+19,341,2401,332766,Majhu Khetra,VILLAGE,3620,805,1893,1727,2325,1295,1647,332766,Majhu Khetra,False,True,0.0,True,False,False,False,False,False
+19,341,2402,332777,Mahishgote,VILLAGE,2119,431,1071,1048,879,1240,833,332777,Mahishgote,False,True,0.0,True,False,False,False,False,False
+19,341,2402,332778,Chak Mahishjol,VILLAGE,0,0,0,0,0,0,0,332778,Chak Mahishjol,False,,0.0,,,False,False,False,False
+19,341,2402,332779,Chak Hari,VILLAGE,1194,236,587,607,723,471,370,332779,Chak Hari,False,False,0.0,True,False,False,False,False,False
+19,341,2402,332780,Mahishnala,VILLAGE,1917,375,940,977,1109,808,732,332780,Mahishnala,False,False,0.0,True,False,False,False,False,False
+19,341,2402,332781,Nonakundu,VILLAGE,2837,660,1406,1431,2023,814,1223,332781,Nonakundu,False,True,0.0,True,True,True,False,False,False
+19,341,2402,332782,Mollar Chak,VILLAGE,1228,223,648,580,726,502,488,332782,Mollar Chak,False,False,0.0,True,False,False,False,False,False
+19,341,2402,332783,Chak Narna,VILLAGE,1195,299,564,631,772,423,526,332783,Chak Narna,False,False,0.0,True,False,False,False,False,False
+19,341,2402,332784,Parbbatipur,VILLAGE,4586,1064,2259,2327,3395,1191,1711,332784,Parbbatipur,False,False,0.0,True,True,True,False,False,False
+19,341,2402,332785,Chak Kadamtala,VILLAGE,323,62,155,168,139,184,120,332785,Chak Kadamtala,False,False,0.0,True,False,True,False,False,False
+19,341,2402,332786,Rajapur,VILLAGE,3209,670,1589,1620,1696,1513,1277,332786,Rajapur,False,True,0.0,True,True,True,True,False,False
+19,341,2402,332787,Baigachhi,VILLAGE,394,102,182,212,306,88,168,332787,Baigachhi,False,False,0.0,True,False,True,True,False,False
+19,341,2402,332788,Khas Mara,VILLAGE,5298,1251,2721,2577,3614,1684,2412,332788,Khas Mara,False,False,0.0,True,True,False,False,False,False
+19,341,2402,332789,Dakshinbari,VILLAGE,1364,285,659,705,621,743,494,332789,Dakshinbari,False,True,0.0,True,False,False,False,False,False
+19,341,2402,332790,Jamdanda,VILLAGE,1017,222,506,511,639,378,545,332790,Jamdanda,False,False,0.0,True,False,False,False,False,False
+19,341,2402,332791,Amre,VILLAGE,1136,251,572,564,740,396,387,332791,Amre,False,False,0.0,True,False,False,False,False,False
+19,341,2402,332792,Sankharidaha,VILLAGE,4021,761,2035,1986,2541,1480,1378,332792,Sankharidaha,False,True,0.0,True,False,True,False,False,False
+19,341,2402,332793,Prasastha,VILLAGE,4255,1031,2208,2047,3282,973,1733,332793,Prasastha,True,False,0.0,True,True,True,False,False,False
+19,341,2402,332794,Purbba Naopara,VILLAGE,2108,597,1048,1060,1784,324,764,332794,Purbba Naopara,True,False,0.0,True,False,True,False,False,False
+19,341,2402,332795,Raghabpur,VILLAGE,1269,322,588,681,877,392,551,332795,Raghabpur,False,False,0.0,True,False,True,False,False,False
+19,341,2402,332796,Dharsha,VILLAGE,950,266,429,521,683,267,370,332796,Dharsha,False,False,0.0,True,False,True,False,False,False
+19,341,2402,332797,Pairatangi,VILLAGE,2061,387,1028,1033,1552,509,702,332797,Pairatangi,False,False,0.0,True,False,True,False,False,False
+19,341,2402,332798,Ichhapur,VILLAGE,1963,465,965,998,1225,738,796,332798,Ichhapur,False,False,0.0,True,False,True,False,False,False
+19,341,2402,332799,Narna,VILLAGE,5518,1326,2803,2715,4071,1447,2170,332799,Narna,False,False,0.0,True,False,True,False,False,False
+19,341,2402,332800,Bhashkur,VILLAGE,3063,709,1457,1606,2100,963,1126,332800,Bhashkur,True,True,0.0,True,False,True,False,False,False
+19,341,2402,332801,Pipli,VILLAGE,1711,412,882,829,1311,400,636,332801,Pipli,False,True,0.0,True,False,False,False,False,False
+19,341,2402,332802,Gayespur,VILLAGE,2229,494,1137,1092,1492,737,832,332802,Gayespur,False,True,0.0,True,False,True,False,False,False
+19,341,2402,332803,Jotgiri,VILLAGE,2005,468,1020,985,1432,573,818,332803,Jotgiri,True,False,0.0,True,False,True,False,False,False
+19,341,2402,332804,Lakshmanpur,VILLAGE,4596,1071,2356,2240,3267,1329,1801,332804,Lakshmanpur,True,False,0.0,True,False,True,False,False,False
+19,341,2402,332805,Danspara,VILLAGE,3621,654,1897,1724,2616,1005,1350,332805,Danspara,False,False,0.0,True,False,True,False,False,False
+19,341,2402,332806,Jhaluarber,VILLAGE,1561,392,756,805,1129,432,657,332806,Jhaluarber,False,False,0.0,True,False,True,False,False,False
+19,341,2402,332807,Dansi,VILLAGE,2382,587,1201,1181,1776,606,1012,332807,Dansi,False,False,0.0,True,False,True,False,False,False
+19,341,2402,332808,Pakuria,VILLAGE,3380,817,1747,1633,2594,786,1279,332808,Pakuria,False,False,0.0,True,False,True,False,False,False
+19,341,2403,332832,Baigachhi,VILLAGE,2783,644,1398,1385,2252,531,1026,332832,Baigachhi,True,False,0.0,True,True,True,True,False,False
+19,341,2403,332833,Debirpara,VILLAGE,6517,1638,3336,3181,4919,1598,3251,332833,Debirpara,True,True,0.0,True,False,True,True,False,False
+19,341,2404,332841,Jala Dhulagiri,VILLAGE,779,168,396,383,503,276,354,332841,Jala Dhulagiri,False,False,0.0,False,False,True,True,True,False
+19,341,2404,332842,Sulati,VILLAGE,3555,736,1883,1672,2434,1121,1403,332842,Sulati,False,False,0.0,True,False,False,False,False,False
+19,341,2404,332843,Sandhipur,VILLAGE,2478,576,1261,1217,1858,620,958,332843,Sandhipur,False,False,0.0,True,False,False,False,False,False
+19,341,2404,332844,Bhagabatipur,VILLAGE,3087,693,1591,1496,1949,1138,1162,332844,Bhagabatipur,False,False,0.0,True,False,True,False,False,False
+19,341,2404,332845,Ghoraghat,VILLAGE,1987,452,1004,983,1327,660,825,332845,Ghoraghat,False,False,0.0,True,False,False,False,False,False
+19,341,2404,332846,Dadpur,VILLAGE,1759,406,876,883,1101,658,616,332846,Dadpur,False,False,0.0,True,False,False,False,False,False
+19,341,2404,332847,Betiari,VILLAGE,2633,612,1330,1303,1971,662,1051,332847,Betiari,False,False,0.0,True,False,False,False,False,False
+19,341,2404,332848,Manoharpur,VILLAGE,3066,740,1564,1502,2487,579,1051,332848,Manoharpur,True,False,0.0,True,False,False,False,False,False
+19,341,2404,332849,Kanyamani,VILLAGE,3574,752,1839,1735,2212,1362,1193,332849,Kanyamani,True,False,0.0,True,False,False,False,False,False
+19,341,2404,332850,Mahishgot,VILLAGE,2313,532,1140,1173,1625,688,936,332850,Mahishgot,False,False,0.0,True,False,False,False,False,False
+19,341,2404,332851,Chatur Bhujkathi,VILLAGE,2489,525,1261,1228,1724,765,927,332851,Chatur Bhujkathi,False,False,0.0,True,False,True,True,False,False
+19,341,2404,332852,Alampur,VILLAGE,4188,1063,2182,2006,3073,1115,1576,332852,Alampur,True,False,0.0,True,False,True,True,False,False
+19,341,2404,332853,Jangalpur,VILLAGE,1902,418,991,911,1449,453,674,332853,Jangalpur,False,False,0.0,True,False,False,True,False,False
+19,341,2404,332854,Chak Radhadasi,VILLAGE,1385,365,699,686,969,416,565,332854,Chak Radhadasi,True,True,0.0,False,False,False,False,False,False
+19,341,2405,332879,Nayachak,VILLAGE,2941,653,1555,1386,2130,811,993,332879,Nayachak,False,True,0.0,True,True,False,True,False,False
+19,341,2405,332880,Samanti,VILLAGE,3580,779,1854,1726,2339,1241,1374,332880,Samanti,False,True,0.0,True,True,False,True,False,False
+19,341,2405,332881,Shyamchak,VILLAGE,240,41,132,108,170,70,91,332881,Shyamchak,False,False,0.0,True,False,False,False,False,False
+19,341,2405,332882,Jala Bishwanathpur,VILLAGE,8569,1873,4460,4109,5283,3286,3917,332882,Jala Bishwanathpur,False,True,0.0,True,True,True,False,False,False
+19,341,2405,332883,Jayrampur,VILLAGE,3261,611,1656,1605,2305,956,1174,332883,Jayrampur,True,False,0.0,True,False,False,True,False,False
+19,341,2405,332884,Ranihati,VILLAGE,4662,936,2380,2282,3343,1319,1992,332884,Ranihati,False,False,0.0,True,False,True,False,False,False
+19,341,2405,332885,Sankhali,VILLAGE,4290,839,2140,2150,2888,1402,1660,332885,Sankhali,False,False,0.0,True,False,True,False,False,False
+19,341,2405,332886,Dakshin Panchla,VILLAGE,2564,499,1307,1257,1749,815,967,332886,Dakshin Panchla,False,False,0.0,True,True,True,False,False,False
+19,341,2405,332887,Dhamsa,VILLAGE,3067,768,1545,1522,2336,731,1358,332887,Dhamsa,False,True,0.0,True,False,True,False,False,False
+19,341,2405,332888,Kulai,VILLAGE,3727,670,1927,1800,2452,1275,1272,332888,Kulai,False,False,1.0,True,False,True,True,False,True
+19,341,2405,332889,Satgharia,VILLAGE,451,94,243,208,338,113,222,332889,Satgharia,False,False,0.0,True,False,False,False,False,False
+19,341,2405,332890,Belkulai,VILLAGE,3580,824,1858,1722,2615,965,1407,332890,Belkulai,False,False,0.0,True,True,False,False,False,False
+19,341,2405,332891,Khayjapur,VILLAGE,2155,457,1090,1065,1518,637,975,332891,Khayjapur,False,False,0.0,True,False,False,False,False,False
+19,341,2406,332912,Tulsiberia,VILLAGE,6729,1457,3453,3276,4291,2438,2582,332912,Tulsiberia,False,False,0.0,True,True,True,False,False,False
+19,341,2406,332913,Chak.Bhagabatipur,VILLAGE,2537,554,1251,1286,1547,990,929,332913,Chak.Bhagabatipur,False,False,0.0,True,False,True,False,False,False
+19,341,2406,332914,Kamina,VILLAGE,3248,727,1668,1580,2232,1016,1346,332914,Kamina,False,False,0.0,True,True,True,False,False,False
+19,341,2406,332915,Sumda,VILLAGE,2217,529,1129,1088,1671,546,835,332915,Sumda,False,False,0.0,True,False,True,False,False,False
+19,341,2406,332916,Abhirampur,VILLAGE,4584,922,2375,2209,3254,1330,1521,332916,Abhirampur,False,False,0.0,True,False,True,False,False,False
+19,341,2406,332917,Barbangalpur,VILLAGE,2591,542,1325,1266,1514,1077,857,332917,Barbangalpur,False,False,0.0,True,False,True,False,False,False
+19,341,2406,332918,Madhubati,VILLAGE,1424,286,685,739,688,736,436,332918,Madhubati,False,False,0.0,True,False,True,False,False,False
+19,341,2406,332919,Amraberia,VILLAGE,485,101,238,247,276,209,128,332919,Amraberia,False,False,0.0,True,False,True,True,False,False
+19,341,2406,332920,Palara,VILLAGE,2659,485,1343,1316,1424,1235,792,332920,Palara,False,False,0.0,True,False,True,False,False,False
+19,341,2406,332921,Bamunhati,VILLAGE,1307,249,671,636,854,453,469,332921,Bamunhati,False,False,0.0,True,False,True,False,False,False
+19,341,2406,332922,Srirampur,VILLAGE,4961,919,2577,2384,3048,1913,1701,332922,Srirampur,False,False,0.0,True,False,True,True,False,False
+19,341,2406,332923,Nayachak,VILLAGE,2339,518,1197,1142,1505,834,768,332923,Nayachak,False,False,0.0,True,False,True,False,False,False
+19,341,2406,332924,Joargor,VILLAGE,6294,1485,3204,3090,4212,2082,2277,332924,Joargor,False,False,0.0,True,True,True,False,False,False
+19,341,2406,332925,Jagarampur,VILLAGE,3224,799,1668,1556,2006,1218,1189,332925,Jagarampur,False,False,0.0,True,False,True,False,False,False
+19,341,2406,332926,Baragram,VILLAGE,2820,561,1410,1410,1740,1080,984,332926,Baragram,False,False,0.0,True,False,True,False,False,False
+19,341,2406,332927,Kamala Chak,VILLAGE,5939,1342,3025,2914,3281,2658,2153,332927,Kamala Chak,False,False,0.0,True,False,False,False,False,False
+19,341,2406,332928,Karatber,VILLAGE,6729,1378,3429,3300,4133,2596,2359,332928,Karatber,False,False,0.0,True,True,True,False,False,False
+19,341,2406,332929,Rajapur,VILLAGE,3184,743,1597,1587,1977,1207,1114,332929,Rajapur,False,False,0.0,True,False,True,False,False,False
+19,341,2406,332930,Jagannathpur,VILLAGE,1595,337,809,786,1153,442,589,332930,Jagannathpur,False,True,0.0,True,True,True,True,False,False
+19,341,2406,332931,Barramnagar,VILLAGE,4134,987,2145,1989,3054,1080,1712,332931,Barramnagar,False,False,0.0,True,False,False,False,False,False
+19,341,2406,332932,Surikhali,VILLAGE,4158,954,2117,2041,3141,1017,1577,332932,Surikhali,False,False,0.0,True,False,True,True,False,False
+19,341,2406,332933,Gharbhanga Basudebpur,VILLAGE,3369,803,1746,1623,2873,496,1172,332933,Gharbhanga Basudebpur,False,False,0.0,True,True,True,False,False,False
+19,341,2406,332934,Dasbhanga,VILLAGE,4266,889,2226,2040,3162,1104,1706,332934,Dasbhanga,False,True,0.0,True,False,True,False,False,False
+19,341,2407,332948,Madhabpur,VILLAGE,2268,509,1123,1145,1765,503,797,332948,Madhabpur,False,True,0.0,True,False,True,True,False,False
+19,341,2407,332949,Kashyappur,VILLAGE,1961,410,962,999,1303,658,661,332949,Kashyappur,False,False,0.0,True,False,True,True,False,False
+19,341,2407,332950,Janbar,VILLAGE,1025,226,508,517,798,227,328,332950,Janbar,False,True,0.0,True,False,False,False,False,False
+19,341,2407,332951,Prasadpur,VILLAGE,2580,602,1324,1256,1861,719,948,332951,Prasadpur,False,True,0.0,True,False,True,False,False,False
+19,341,2407,332952,Jayrampur,VILLAGE,2630,494,1345,1285,1746,884,864,332952,Jayrampur,False,True,0.0,True,True,True,False,False,False
+19,341,2407,332953,Srikrishnapur,VILLAGE,3508,785,1770,1738,2429,1079,1564,332953,Srikrishnapur,False,True,0.0,True,True,True,False,False,False
+19,341,2407,332954,Kulgachhi,VILLAGE,2672,595,1367,1305,2008,664,998,332954,Kulgachhi,False,False,0.0,True,True,True,True,False,False
+19,341,2407,332955,Manikpur,VILLAGE,3405,695,1755,1650,2259,1146,1190,332955,Manikpur,False,False,0.0,True,False,True,False,False,False
+19,341,2407,332956,Jaynagar,VILLAGE,4033,806,2090,1943,2931,1102,1706,332956,Jaynagar,False,False,0.0,True,False,True,False,False,False
+19,341,2407,332957,Pirpur,VILLAGE,657,126,328,329,432,225,391,332957,Pirpur,False,False,0.0,True,True,True,False,False,False
+19,341,2407,332958,Barmouberia,VILLAGE,2533,467,1295,1238,1664,869,959,332958,Barmouberia,False,False,0.0,True,False,False,False,False,False
+19,341,2407,332959,Panchberia Barberia,VILLAGE,2530,536,1292,1238,1844,686,1092,332959,Panchberia Barberia,False,False,0.0,True,False,False,False,False,False
+19,341,2407,332960,Mayanapur,VILLAGE,2375,565,1224,1151,1906,469,923,332960,Mayanapur,False,True,0.0,True,True,False,False,False,False
+19,341,2407,332961,Lalitagari,VILLAGE,2198,461,1141,1057,1397,801,832,332961,Lalitagari,False,False,0.0,True,False,True,False,False,False
+19,341,2407,332962,Kansona,VILLAGE,1101,252,576,525,766,335,557,332962,Kansona,False,True,0.0,True,True,False,False,False,False
+19,341,2407,332963,Kharia,VILLAGE,2141,500,1096,1045,1661,480,924,332963,Kharia,False,False,0.0,True,True,False,False,False,False
+19,341,2407,332964,Bar Mongrajpur,VILLAGE,1326,280,678,648,924,402,560,332964,Bar Mongrajpur,False,False,0.0,True,False,False,False,False,False
+19,341,2407,332965,Mongrajpur,VILLAGE,1711,388,883,828,1004,707,895,332965,Mongrajpur,False,False,0.0,True,False,False,False,False,False
+19,341,2407,332966,Gadaipur,VILLAGE,3356,716,1712,1644,1994,1362,1267,332966,Gadaipur,False,False,0.0,True,False,False,False,False,False
+19,341,2407,332967,Dahuka Nischindipur,VILLAGE,2120,479,1040,1080,1435,685,663,332967,Dahuka Nischindipur,False,False,0.0,True,False,True,False,False,False
+19,341,2407,332968,Beraberia,VILLAGE,4404,978,2219,2185,3174,1230,1625,332968,Beraberia,False,False,0.0,True,True,True,False,False,False
+19,341,2407,332969,Amtala,VILLAGE,1441,343,724,717,981,460,572,332969,Amtala,False,False,0.0,True,False,False,False,False,False
+19,341,2407,332970,Bauria,VILLAGE,3926,890,2032,1894,2798,1128,1411,332970,Bauria,False,False,0.0,True,True,False,False,False,False
+19,341,2407,332971,Bhekutal,VILLAGE,3765,784,1902,1863,2785,980,1457,332971,Bhekutal,False,False,0.0,True,False,False,False,False,False
+19,341,2407,332972,Amritasal,VILLAGE,1193,244,625,568,877,316,382,332972,Amritasal,False,False,0.0,True,False,False,False,False,False
+19,341,2407,332973,Rangmahal,VILLAGE,4986,1019,2528,2458,3216,1770,1762,332973,Rangmahal,False,False,0.0,True,True,False,False,False,False
+19,341,2407,332974,Bishweshwarpur,VILLAGE,3532,727,1819,1713,2309,1223,1216,332974,Bishweshwarpur,False,False,0.0,True,False,False,False,False,False
+19,341,2407,332975,Samruk,VILLAGE,3602,745,1863,1739,2554,1048,1047,332975,Samruk,False,False,0.0,True,True,True,False,False,False
+19,341,2407,332976,Hatgachha,VILLAGE,2769,647,1439,1330,1931,838,1077,332976,Hatgachha,False,True,0.0,True,False,False,False,False,False
+19,341,2407,332977,Kashmul,VILLAGE,4626,988,2379,2247,3315,1311,1398,332977,Kashmul,False,False,0.0,True,True,True,False,False,False
+19,341,2407,332978,Lohanagar,VILLAGE,2927,541,1498,1429,1728,1199,923,332978,Lohanagar,False,False,0.0,True,False,False,False,False,False
+19,341,2407,332979,Birpur,VILLAGE,1299,301,684,615,926,373,416,332979,Birpur,False,False,0.0,True,False,False,False,False,False
+19,341,2407,332980,Gharsalap,VILLAGE,1749,365,892,857,982,767,531,332980,Gharsalap,False,False,0.0,True,False,False,False,False,False
+19,341,2407,332981,Baragohal,VILLAGE,4045,748,2066,1979,2573,1472,1304,332981,Baragohal,False,False,0.0,True,False,False,False,False,False
+19,341,2407,332982,Dalsalap,VILLAGE,2035,400,1033,1002,1502,533,898,332982,Dalsalap,False,False,0.0,True,False,False,False,False,False
+19,341,2407,332983,Birsibpur,VILLAGE,1417,301,701,716,998,419,516,332983,Birsibpur,True,False,0.0,True,True,False,False,False,False
+19,341,2407,332984,Balarampur,VILLAGE,1302,289,649,653,1044,258,389,332984,Balarampur,False,False,0.0,True,False,False,False,False,False
+19,341,2407,332985,Uttar Ramchandrapur,VILLAGE,1402,307,698,704,1133,269,394,332985,Uttar Ramchandrapur,False,False,0.0,True,True,False,False,False,False
+19,341,2407,332986,Khan Jadapur,VILLAGE,2798,568,1407,1391,1845,953,870,332986,Khan Jadapur,False,False,0.0,True,False,False,False,False,False
+19,341,2407,332987,Tildari,VILLAGE,1450,261,741,709,1017,433,504,332987,Tildari,False,False,0.0,True,False,False,False,False,False
+19,341,2407,332988,Ghatampur,VILLAGE,3687,681,1850,1837,2435,1252,1414,332988,Ghatampur,False,False,0.0,True,False,False,False,False,False
+19,341,2407,332989,Harinarayan Chak,VILLAGE,962,155,501,461,356,606,261,332989,Harinarayan Chak,False,False,0.0,True,False,True,False,False,False
+19,341,2407,332990,Malanchabere,VILLAGE,2001,445,1031,970,1248,753,786,332990,Malanchabere,False,False,0.0,True,False,False,True,False,False
+19,341,2407,332991,Rauta,VILLAGE,691,163,343,348,472,219,228,332991,Rauta,False,False,0.0,True,False,False,True,False,False
+19,341,2407,332992,Mahespur,VILLAGE,4632,1043,2390,2242,3134,1498,1709,332992,Mahespur,False,False,0.0,True,True,True,False,False,False
+19,341,2407,332993,Musapur,VILLAGE,1303,254,681,622,844,459,380,332993,Musapur,False,False,0.0,True,False,False,False,False,False
+19,341,2407,332994,Baggachha,VILLAGE,1579,325,802,777,1037,542,680,332994,Baggachha,False,False,0.0,True,False,False,False,False,False
+19,341,2407,332995,Gudar,VILLAGE,2395,484,1202,1193,1548,847,880,332995,Gudar,False,False,0.0,True,False,False,False,False,False
+19,341,2407,332996,Damodarpur,VILLAGE,3281,630,1664,1617,1771,1510,1034,332996,Damodarpur,False,False,0.0,True,False,True,False,False,False
+19,341,2407,332997,Amsa,VILLAGE,3145,706,1615,1530,2329,816,1173,332997,Amsa,False,False,0.0,True,False,False,False,False,False
+19,341,2407,332998,Tapna,VILLAGE,6182,1183,3159,3023,3648,2534,1879,332998,Tapna,False,False,0.0,True,False,False,False,False,False
+19,341,2407,332999,Palpara,VILLAGE,1465,363,767,698,989,476,549,332999,Palpara,False,False,0.0,True,True,False,False,False,False
+19,341,2407,333000,Dadpur,VILLAGE,905,227,482,423,641,264,330,333000,Dadpur,False,False,0.0,True,False,False,False,False,False
+19,341,2407,333001,Dakshin Ramchandrapur,VILLAGE,3369,741,1705,1664,2142,1227,1619,333001,Dakshin Ramchandrapur,False,True,0.0,True,True,False,False,False,False
+19,341,2407,333002,Baikhali,VILLAGE,2243,501,1144,1099,1608,635,711,333002,Baikhali,True,False,0.0,True,True,False,True,False,False
+19,341,2407,333003,Maubesia,VILLAGE,4801,1052,2473,2328,3440,1361,1788,333003,Maubesia,True,False,0.0,True,False,False,True,False,False
+19,341,2407,333004,Bahira,VILLAGE,7845,1664,3987,3858,5233,2612,3088,333004,Bahira,False,True,0.0,True,True,False,False,False,False
+19,341,2407,333005,Mahisali,VILLAGE,5201,963,2633,2568,2836,2365,1812,333005,Mahisali,False,False,0.0,True,False,True,False,False,False
+19,341,2407,333006,Kalinagar,VILLAGE,11358,2425,5815,5543,7357,4001,4328,333006,Kalinagar,False,True,1.0,True,True,False,True,False,True
+19,341,2407,333007,Bara Gachha,VILLAGE,1309,295,655,654,888,421,447,333007,Bara Gachha,False,False,0.0,True,False,False,False,False,False
+19,341,2407,333008,Kasipur,VILLAGE,1300,290,663,637,938,362,478,333008,Kasipur,False,False,0.0,True,False,False,False,False,False
+19,341,2407,333009,Gauripur,VILLAGE,3681,873,1847,1834,2839,842,1338,333009,Gauripur,False,True,0.0,True,True,True,False,False,False
+19,341,2407,333010,Kajiakhali,VILLAGE,2570,636,1316,1254,1952,618,923,333010,Kajiakhali,False,True,0.0,True,True,False,False,False,False
+19,341,2407,333011,Hiraganja,VILLAGE,2508,552,1278,1230,1781,727,840,333011,Hiraganja,False,True,0.0,True,False,False,False,False,False
+19,341,2407,333012,Madai,VILLAGE,2722,568,1391,1331,1744,978,815,333012,Madai,False,True,0.0,True,False,False,False,False,False
+19,341,2407,333013,Tiorpara,VILLAGE,2848,659,1448,1400,2019,829,982,333013,Tiorpara,False,False,0.0,True,False,False,False,False,False
+19,341,2408,333019,Kasrakatai,VILLAGE,1706,383,869,837,1336,370,677,333019,Kasrakatai,True,False,0.0,True,False,False,False,False,False
+19,341,2408,333020,Baksi,VILLAGE,3072,661,1560,1512,2020,1052,1111,333020,Baksi,True,False,0.0,True,False,False,False,False,False
+19,341,2408,333021,Mankur,VILLAGE,7144,1609,3618,3526,5005,2139,2428,333021,Mankur,True,False,0.0,True,True,False,False,False,False
+19,341,2408,333022,Malia,VILLAGE,2654,489,1360,1294,1938,716,813,333022,Malia,True,False,0.0,True,True,False,False,False,False
+19,341,2408,333023,Bholsar,VILLAGE,1584,281,794,790,1197,387,578,333023,Bholsar,True,False,0.0,True,True,False,False,False,False
+19,341,2408,333024,Kulepairi,VILLAGE,0,0,0,0,0,0,0,333024,Kulepairi,False,,0.0,,,False,False,False,False
+19,341,2408,333025,Purbba Bainan,VILLAGE,4746,937,2429,2317,3684,1062,1488,333025,Purbba Bainan,True,True,0.0,True,True,True,False,False,False
+19,341,2408,333026,Chakur,VILLAGE,3047,676,1560,1487,2366,681,1175,333026,Chakur,False,True,0.0,True,True,False,True,False,False
+19,341,2408,333027,Brahmangram,VILLAGE,3603,677,1866,1737,2411,1192,1120,333027,Brahmangram,False,True,0.0,True,False,False,False,False,False
+19,341,2408,333028,Bagur,VILLAGE,3353,739,1725,1628,2470,883,1174,333028,Bagur,False,True,0.0,True,False,False,False,False,False
+19,341,2408,333029,Amrajol,VILLAGE,1565,361,825,740,1265,300,512,333029,Amrajol,True,False,0.0,True,False,True,False,False,False
+19,341,2408,333030,Degram,VILLAGE,3038,681,1583,1455,1548,1490,1154,333030,Degram,True,False,0.0,True,False,False,False,False,False
+19,341,2408,333031,Dwipamalita,VILLAGE,4025,961,2111,1914,2971,1054,1389,333031,Dwipamalita,True,False,0.0,True,False,True,False,False,False
+19,341,2408,333032,Birampur,VILLAGE,5755,1334,2962,2793,4377,1378,2076,333032,Birampur,True,False,0.0,True,False,True,False,False,False
+19,341,2408,333033,Panitras,VILLAGE,5227,1215,2725,2502,3952,1275,1808,333033,Panitras,True,False,0.0,True,True,True,False,False,False
+19,341,2408,333034,Masiara,VILLAGE,1735,387,913,822,1246,489,632,333034,Masiara,True,True,0.0,True,False,False,False,False,False
+19,341,2408,333035,Sabsit,VILLAGE,6736,1444,3426,3310,4792,1944,2450,333035,Sabsit,False,False,0.0,True,False,False,True,False,False
+19,341,2408,333036,Patinan,VILLAGE,3456,759,1763,1693,2710,746,1056,333036,Patinan,True,True,0.0,True,False,False,True,False,False
+19,341,2408,333037,Gopalpur,VILLAGE,2462,554,1262,1200,2027,435,888,333037,Gopalpur,True,False,0.0,True,True,False,True,False,False
+19,341,2408,333038,Joka,VILLAGE,4137,859,2124,2013,3039,1098,1283,333038,Joka,False,True,0.0,True,False,False,False,False,False
+19,341,2408,333039,Adra,VILLAGE,3128,653,1597,1531,2457,671,923,333039,Adra,False,False,0.0,True,False,False,False,False,False
+19,341,2408,333040,Harop,VILLAGE,5477,1271,2843,2634,4116,1361,1978,333040,Harop,False,False,0.0,True,True,True,False,False,False
+19,341,2408,333041,Agunsi Bhuinara,VILLAGE,3546,827,1833,1713,2852,694,1263,333041,Agunsi Bhuinara,False,False,0.0,True,True,True,False,False,False
+19,341,2408,333042,Purnal,VILLAGE,1645,394,863,782,1277,368,538,333042,Purnal,False,False,0.0,True,False,True,False,False,False
+19,341,2408,333043,Naoapara,VILLAGE,3669,703,1912,1757,2107,1562,1213,333043,Naoapara,False,False,0.0,True,False,True,False,False,False
+19,341,2408,333044,Hature Kandarpapur,VILLAGE,7079,1549,3632,3447,5226,1853,2402,333044,Hature Kandarpapur,False,False,0.0,True,True,True,True,False,False
+19,341,2408,333045,Khanpur,VILLAGE,3794,873,1958,1836,3034,760,1381,333045,Khanpur,False,False,0.0,True,True,True,False,False,False
+19,341,2408,333046,Jote Bireshwar,VILLAGE,1019,220,527,492,720,299,335,333046,Jote Bireshwar,False,False,0.0,True,False,True,False,False,False
+19,341,2408,333047,Natibpur,VILLAGE,1866,417,983,883,1373,493,670,333047,Natibpur,False,False,0.0,True,True,False,False,False,False
+19,341,2408,333048,Singara,VILLAGE,1080,264,565,515,893,187,427,333048,Singara,False,False,0.0,True,False,False,False,False,False
+19,341,2408,333049,Chak Manohar,VILLAGE,1153,228,621,532,767,386,352,333049,Chak Manohar,False,False,0.0,True,True,True,False,False,False
+19,341,2408,333050,Murgaberia,VILLAGE,5936,1195,3086,2850,4083,1853,2470,333050,Murgaberia,False,False,0.0,True,True,True,False,False,False
+19,341,2408,333051,Nahala,VILLAGE,1726,351,918,808,1336,390,612,333051,Nahala,False,False,0.0,True,False,True,False,False,False
+19,341,2408,333052,Ulanpara,VILLAGE,8369,1793,4349,4020,6235,2134,3290,333052,Ulanpara,False,True,0.0,True,True,True,False,False,False
+19,341,2408,333053,Hijlak,VILLAGE,3808,888,1964,1844,3187,621,1313,333053,Hijlak,True,True,0.0,True,True,True,True,False,False
+19,341,2408,333054,Tepur Nabasan,VILLAGE,3234,744,1660,1574,2421,813,1330,333054,Tepur Nabasan,True,True,0.0,True,True,True,True,False,False
+19,341,2408,333055,Durllabhpur,VILLAGE,2124,449,1092,1032,1658,466,891,333055,Durllabhpur,True,False,0.0,True,False,False,False,False,False
+19,341,2408,333056,Rasti,VILLAGE,3142,659,1606,1536,2344,798,1238,333056,Rasti,True,False,0.0,True,False,True,False,False,False
+19,341,2408,333057,Mahadebpur,VILLAGE,3772,848,1938,1834,3004,768,1425,333057,Mahadebpur,True,False,0.0,True,False,True,True,False,False
+19,341,2408,333058,Sitalpur,VILLAGE,2031,464,1063,968,1678,353,753,333058,Sitalpur,True,False,0.0,True,False,False,False,False,False
+19,341,2408,333059,Ramchandrapur,VILLAGE,3473,760,1785,1688,2416,1057,1125,333059,Ramchandrapur,True,False,0.0,True,False,False,False,False,False
+19,341,2409,333070,Mellak,VILLAGE,5713,1251,2936,2777,4646,1067,2013,333070,Mellak,False,False,0.0,True,True,True,False,True,False
+19,341,2409,333071,Asharia,VILLAGE,968,201,490,478,719,249,303,333071,Asharia,False,False,0.0,True,True,False,False,,False
+19,341,2409,333072,Deulti,VILLAGE,3417,763,1736,1681,2595,822,1186,333072,Deulti,False,False,0.0,True,True,False,False,,False
+19,341,2409,333073,Chak Kamala,VILLAGE,5654,1211,2945,2709,4039,1615,2058,333073,Chak Kamala,True,False,0.0,True,True,True,False,False,False
+19,341,2409,333074,Matinala,VILLAGE,2568,554,1327,1241,1573,995,1232,333074,Matinala,False,False,0.0,True,False,True,False,False,False
+19,341,2409,333075,Orphuli,VILLAGE,3880,916,1980,1900,2840,1040,1580,333075,Orphuli,False,False,0.0,True,True,False,False,False,False
+19,341,2409,333076,Char Orphuli,VILLAGE,0,0,0,0,0,0,0,333076,Char Orphuli,,,0.0,,,,,,False
+19,341,2409,333077,Kamardaha,VILLAGE,1715,385,888,827,1237,478,629,333077,Kamardaha,True,False,0.0,True,False,False,False,False,False
+19,341,2409,333078,Bansberia,VILLAGE,1435,311,749,686,1108,327,671,333078,Bansberia,True,False,0.0,True,False,False,False,False,False
+19,341,2409,333079,Bankurdaha,VILLAGE,2275,502,1176,1099,1700,575,1202,333079,Bankurdaha,True,False,0.0,True,False,False,False,False,False
+19,341,2409,333080,Heledwip,VILLAGE,2035,457,1041,994,1583,452,770,333080,Heledwip,False,False,0.0,True,True,False,False,False,False
+19,341,2409,333081,Rana,VILLAGE,1760,316,932,828,1292,468,571,333081,Rana,True,True,0.0,True,False,False,False,False,False
+19,341,2409,333082,Ishwaripur,VILLAGE,812,174,405,407,620,192,277,333082,Ishwaripur,False,False,0.0,True,True,False,False,,False
+19,341,2409,333083,Brahman Dukuria,VILLAGE,1646,346,839,807,1151,495,512,333083,Brahman Dukuria,False,False,0.0,True,False,False,False,False,False
+19,341,2409,333084,Sondail,VILLAGE,951,191,514,437,689,262,331,333084,Sondail,True,False,0.0,True,False,False,False,False,False
+19,341,2409,333085,Brindabanpur,VILLAGE,1171,267,595,576,951,220,371,333085,Brindabanpur,True,False,0.0,True,False,True,False,False,False
+19,341,2409,333086,Kazibhuara,VILLAGE,1230,287,648,582,1011,219,480,333086,Kazibhuara,True,False,0.0,True,False,True,False,False,False
+19,341,2409,333087,Balarampur,VILLAGE,713,160,378,335,593,120,225,333087,Balarampur,True,False,0.0,True,False,True,False,False,False
+19,341,2409,333088,Katapukuria,VILLAGE,2480,584,1260,1220,1559,921,798,333088,Katapukuria,False,False,0.0,True,True,True,False,False,False
+19,341,2409,333089,Charkata Pukuria,VILLAGE,228,55,116,112,158,70,156,333089,Charkata Pukuria,False,False,0.0,True,False,True,False,False,False
+19,341,2409,333090,Birkul,VILLAGE,4023,888,2079,1944,2781,1242,1779,333090,Birkul,False,False,0.0,True,False,False,False,False,False
+19,341,2409,333091,Chaitanyapur,VILLAGE,2065,469,1073,992,1682,383,749,333091,Chaitanyapur,True,False,0.0,True,False,True,False,False,False
+19,341,2409,333092,Nazarpur,VILLAGE,2110,455,1045,1065,1496,614,703,333092,Nazarpur,True,False,0.0,True,False,False,False,False,False
+19,341,2409,333093,Athila,VILLAGE,2903,687,1474,1429,2141,762,1059,333093,Athila,True,True,0.0,True,True,False,True,False,False
+19,341,2409,333094,Paikpari,VILLAGE,3373,707,1754,1619,2558,815,1140,333094,Paikpari,True,False,0.0,True,True,False,False,False,False
+19,341,2409,333095,Borar,VILLAGE,1963,433,1010,953,1607,356,645,333095,Borar,True,False,0.0,True,True,False,False,False,False
+19,341,2409,333096,Gunandapur,VILLAGE,2797,601,1443,1354,2185,612,993,333096,Gunandapur,True,False,0.0,True,False,True,True,False,False
+19,341,2409,333097,Santoshpur,VILLAGE,2150,471,1109,1041,1549,601,715,333097,Santoshpur,True,False,0.0,True,True,False,False,False,False
+19,341,2409,333098,Baidyanathpur,VILLAGE,5989,1364,3099,2890,4798,1191,2436,333098,Baidyanathpur,False,False,0.0,True,True,True,True,False,False
+19,341,2409,333099,Khanjadapur,VILLAGE,3329,738,1712,1617,2454,875,1536,333099,Khanjadapur,False,True,0.0,True,False,True,False,False,False
+19,341,2409,333100,Benapur,VILLAGE,6655,1440,3399,3256,5023,1632,2309,333100,Benapur,False,False,0.0,True,True,True,False,False,False
+19,341,2409,333101,Chandanapara,VILLAGE,4342,967,2226,2116,3484,858,1540,333101,Chandanapara,False,False,0.0,True,True,False,False,False,False
+19,341,2409,333102,Khajurnan,VILLAGE,4903,953,2505,2398,3380,1523,1740,333102,Khajurnan,True,False,0.0,True,False,True,False,False,False
+19,341,2409,333103,Chandrabhag,VILLAGE,1997,508,1017,980,1644,353,768,333103,Chandrabhag,True,False,0.0,True,True,True,False,False,False
+19,341,2409,333104,Rabibhag,VILLAGE,8976,1869,4710,4266,6001,2975,3794,333104,Rabibhag,False,False,0.0,True,True,True,False,False,False
+19,341,2409,333105,Rupasgari,VILLAGE,7240,1494,3786,3454,4629,2611,2763,333105,Rupasgari,False,False,0.0,True,True,True,False,False,False
+19,341,2409,333106,Panchani Guzrat,VILLAGE,3359,675,1792,1567,2431,928,1335,333106,Panchani Guzrat,False,False,0.0,True,False,True,False,False,False
+19,341,2409,333107,Madanmohanpur,VILLAGE,965,202,469,496,685,280,475,333107,Madanmohanpur,False,False,0.0,True,False,False,False,False,False
+19,341,2409,333108,Basudebpur,VILLAGE,1474,298,740,734,1151,323,547,333108,Basudebpur,False,False,0.0,True,False,False,False,False,False
+19,341,2409,333109,Raynagar,VILLAGE,990,225,502,488,742,248,358,333109,Raynagar,False,False,0.0,True,False,False,False,False,False
+19,341,2409,333110,Chhayani Guzrat,VILLAGE,4071,855,2125,1946,2726,1345,1433,333110,Chhayani Guzrat,False,False,0.0,True,False,False,False,False,False
+19,341,2409,333111,Duaniguzrat,VILLAGE,2708,609,1395,1313,1778,930,1157,333111,Duaniguzrat,False,False,0.0,True,False,False,False,False,False
+19,341,2410,333119,Panshila,VILLAGE,2716,609,1366,1350,1956,760,739,333119,Panshila,False,False,0.0,True,False,False,False,False,False
+19,341,2410,333120,Srikol,VILLAGE,4465,1101,2243,2222,3121,1344,1817,333120,Srikol,False,False,0.0,True,True,True,True,False,False
+19,341,2410,333121,Alpin,VILLAGE,1284,327,671,613,973,311,535,333121,Alpin,False,False,0.0,True,False,True,False,False,False
+19,341,2410,333122,Narikelabar,VILLAGE,1802,458,922,880,1437,365,622,333122,Narikelabar,False,False,0.0,True,True,True,True,False,False
+19,341,2410,333123,Kathilabar,VILLAGE,2940,682,1468,1472,2073,867,1042,333123,Kathilabar,True,False,0.0,True,False,True,True,False,False
+19,341,2410,333124,Shitalpur,VILLAGE,3590,904,1831,1759,2732,858,1246,333124,Shitalpur,True,False,0.0,True,False,True,True,False,False
+19,341,2410,333125,Harinarayanpur,VILLAGE,1680,419,869,811,947,733,567,333125,Harinarayanpur,True,False,0.0,True,False,False,False,False,False
+19,341,2410,333126,Kotara,VILLAGE,4613,1133,2349,2264,3838,775,1667,333126,Kotara,False,False,0.0,True,False,False,False,False,False
+19,341,2410,333127,Nunebar,VILLAGE,2820,689,1447,1373,2172,648,1087,333127,Nunebar,False,False,0.0,True,False,True,False,False,False
+19,341,2410,333128,Deuli,VILLAGE,6642,1683,3384,3258,4595,2047,2345,333128,Deuli,False,False,0.0,True,False,True,False,False,False
+19,341,2410,333129,Kamalpur,VILLAGE,2643,665,1350,1293,2072,571,933,333129,Kamalpur,False,False,0.0,True,False,True,False,False,False
+19,341,2410,333130,Purulpara,VILLAGE,2041,494,1080,961,1718,323,773,333130,Purulpara,False,True,0.0,True,False,True,False,False,False
+19,341,2410,333131,Dakshin Durgapur,VILLAGE,4457,1125,2282,2175,3165,1292,1722,333131,Dakshin Durgapur,False,True,0.0,True,False,False,False,False,False
+19,341,2410,333132,Kalidaha,VILLAGE,3435,808,1764,1671,2733,702,1279,333132,Kalidaha,False,False,0.0,True,True,False,False,False,False
+19,341,2410,333133,Goaldaha,VILLAGE,1531,367,762,769,1237,294,636,333133,Goaldaha,False,False,0.0,True,False,False,False,False,False
+19,341,2410,333134,Sankardari,VILLAGE,389,88,194,195,285,104,136,333134,Sankardari,False,False,0.0,False,False,True,True,False,False
+19,341,2410,333135,Bharapura,VILLAGE,477,117,238,239,356,121,167,333135,Bharapura,True,False,0.0,True,False,False,True,False,False
+19,341,2410,333136,Sarishani,VILLAGE,3061,756,1542,1519,2238,823,1013,333136,Sarishani,True,False,0.0,True,True,True,True,False,False
+19,341,2410,333137,Kamdebpur,VILLAGE,2222,520,1074,1148,1508,714,709,333137,Kamdebpur,True,False,0.0,True,False,False,True,False,False
+19,341,2410,333138,Kshirish Beria,VILLAGE,1638,406,818,820,1245,393,539,333138,Kshirish Beria,True,False,0.0,True,False,False,True,False,False
+19,341,2410,333139,Kathanali,VILLAGE,1600,386,809,791,1269,331,543,333139,Kathanali,True,False,0.0,True,False,False,False,False,False
+19,341,2410,333140,Baneshwarpur,VILLAGE,4928,1143,2530,2398,3652,1276,1638,333140,Baneshwarpur,False,False,0.0,True,False,True,True,False,False
+19,341,2410,333141,Pichhaldaha,VILLAGE,9131,2117,4689,4442,6494,2637,3217,333141,Pichhaldaha,False,False,0.0,True,True,False,True,False,False
+19,341,2410,333142,Sibpur,VILLAGE,4499,1083,2333,2166,3482,1017,1853,333142,Sibpur,False,False,0.0,True,True,False,True,False,False
+19,341,2410,333143,Gadiara,VILLAGE,1806,410,914,892,1242,564,672,333143,Gadiara,False,False,0.0,True,False,True,False,False,False
+19,341,2410,333144,Ambere,VILLAGE,1512,351,791,721,983,529,609,333144,Ambere,False,True,0.0,True,False,False,False,False,False
+19,341,2410,333145,Gurepol,VILLAGE,7613,1775,3862,3751,5273,2340,2785,333145,Gurepol,False,False,0.0,True,True,False,False,False,False
+19,341,2410,333146,Kurchi Beria,VILLAGE,1381,326,673,708,973,408,508,333146,Kurchi Beria,True,True,0.0,True,True,False,False,False,False
+19,341,2410,333147,Sibganja,VILLAGE,4764,1066,2386,2378,3153,1611,1674,333147,Sibganja,True,False,0.0,True,True,True,True,False,False
+19,341,2410,333148,Bhagawanpur,VILLAGE,4680,1084,2355,2325,3252,1428,1414,333148,Bhagawanpur,False,False,0.0,True,True,True,False,False,False
+19,341,2410,333149,Rameshwarpur,VILLAGE,2274,532,1136,1138,1628,646,821,333149,Rameshwarpur,True,False,0.0,True,False,False,False,False,False
+19,341,2410,333150,Bhabanipur,VILLAGE,2851,630,1458,1393,1873,978,929,333150,Bhabanipur,False,False,0.0,True,False,False,False,False,False
+19,341,2410,333151,Gajankol,VILLAGE,4406,1017,2291,2115,3477,929,1877,333151,Gajankol,False,False,0.0,True,True,False,False,False,False
+19,341,2410,333152,Balichaturi,VILLAGE,1829,424,926,903,1203,626,583,333152,Balichaturi,False,False,0.0,True,False,True,False,False,False
+19,341,2410,333153,Maheshwarpur,VILLAGE,1136,248,595,541,936,200,465,333153,Maheshwarpur,False,False,0.0,True,True,True,False,False,False
+19,341,2410,333154,Chandpur,VILLAGE,3045,637,1553,1492,2023,1022,1043,333154,Chandpur,False,False,0.0,True,True,False,False,False,False
+19,341,2410,333155,Puturia,VILLAGE,1918,462,980,938,1209,709,1148,333155,Puturia,False,False,0.0,True,False,True,False,False,False
+19,341,2410,333156,Dafarpur,VILLAGE,651,158,319,332,473,178,363,333156,Dafarpur,False,False,0.0,False,False,True,False,False,False
+19,341,2410,333157,Srirampur,VILLAGE,1219,291,599,620,854,365,355,333157,Srirampur,False,False,0.0,True,False,True,False,False,False
+19,341,2410,333158,Silampur,VILLAGE,2352,512,1193,1159,1635,717,745,333158,Silampur,False,False,0.0,True,True,True,True,False,False
+19,341,2410,333159,Gopalpur,VILLAGE,578,120,280,298,300,278,164,333159,Gopalpur,False,False,0.0,True,False,False,False,False,False
+19,341,2410,333160,Dhandali,VILLAGE,6307,1407,3180,3127,4066,2241,2206,333160,Dhandali,False,False,0.0,True,False,False,True,False,False
+19,341,2410,333161,Madaribar,VILLAGE,628,138,329,299,336,292,195,333161,Madaribar,False,False,0.0,True,False,False,False,False,False
+19,341,2410,333162,Syadpur,VILLAGE,2989,650,1516,1473,2158,831,1033,333162,Syadpur,False,False,0.0,True,False,False,False,False,False
+19,341,2410,333163,Gutinaguri,VILLAGE,2080,441,1052,1028,1580,500,786,333163,Gutinaguri,False,False,0.0,True,True,False,False,False,False
+19,341,2410,333164,Purbba Gazipur,VILLAGE,364,79,184,180,271,93,107,333164,Purbba Gazipur,False,False,0.0,False,False,False,False,False,False
+19,341,2410,333165,Ichhapur,VILLAGE,3120,674,1584,1536,2245,875,1278,333165,Ichhapur,False,False,0.0,True,False,False,True,False,False
+19,341,2410,333166,Baganda,VILLAGE,3333,729,1685,1648,2181,1152,1181,333166,Baganda,False,True,0.0,True,True,False,True,False,False
+19,341,2410,333167,Kumar Khali,VILLAGE,2313,517,1170,1143,1609,704,930,333167,Kumar Khali,False,False,0.0,True,False,False,False,False,False
+19,341,2410,333168,Chhota Joynagar,VILLAGE,900,200,453,447,592,308,298,333168,Chhota Joynagar,False,False,0.0,True,False,False,False,False,False
+19,341,2410,333169,Purali Para,VILLAGE,1998,445,993,1005,1151,847,699,333169,Purali Para,False,False,0.0,True,False,False,False,False,False
+19,341,2410,333170,Belari,VILLAGE,4383,1014,2251,2132,2645,1738,1414,333170,Belari,False,False,0.0,True,True,False,True,False,False
+19,341,2410,333171,Purbba Basudebpur,VILLAGE,2398,577,1225,1173,1540,858,772,333171,Purbba Basudebpur,False,False,0.0,True,False,False,False,False,False
+19,341,2410,333172,Chandipur,VILLAGE,3548,772,1844,1704,2255,1293,1114,333172,Chandipur,False,False,0.0,True,False,False,False,False,False
+19,341,2410,333173,Joy Krishnapur,VILLAGE,1728,397,884,844,1368,360,642,333173,Joy Krishnapur,False,False,0.0,True,False,False,False,False,False
+19,341,2410,333174,Kasipur,VILLAGE,1731,414,910,821,1027,704,560,333174,Kasipur,False,False,0.0,True,False,False,False,False,False
+19,341,2410,333175,Nabagram,VILLAGE,1330,326,676,654,1015,315,517,333175,Nabagram,False,False,0.0,True,False,True,True,False,False
+19,341,2410,333176,Gabardaha,VILLAGE,3128,721,1602,1526,1947,1181,1176,333176,Gabardaha,False,False,0.0,True,False,False,False,False,False
+19,341,2410,333177,Ghoshpur Kalia,VILLAGE,3416,742,1693,1723,2166,1250,1092,333177,Ghoshpur Kalia,False,False,0.0,True,True,True,False,False,False
+19,341,2410,333178,Bar Kalia,VILLAGE,2562,566,1335,1227,1682,880,1178,333178,Bar Kalia,False,False,0.0,True,False,False,False,False,False
+19,341,2410,333179,Ramchandrapur,VILLAGE,6078,1300,3150,2928,3941,2137,2054,333179,Ramchandrapur,False,False,0.0,True,False,True,False,False,False
+19,341,2410,333180,Gohal Beria,VILLAGE,2734,638,1380,1354,1877,857,924,333180,Gohal Beria,False,False,0.0,True,False,True,False,False,False
+19,341,2410,333181,Alipur,VILLAGE,7533,1563,3770,3763,4628,2905,2398,333181,Alipur,False,False,0.0,True,False,False,False,False,False
+19,341,2411,333186,Gopinathpur,VILLAGE,2273,527,1162,1111,1639,634,863,333186,Gopinathpur,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333187,Pakuria,VILLAGE,2581,529,1341,1240,1882,699,849,333187,Pakuria,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333188,Katagachhi,VILLAGE,4008,829,2045,1963,2706,1302,1207,333188,Katagachhi,False,False,0.0,True,False,True,True,False,False
+19,341,2411,333189,Mosha,VILLAGE,2629,498,1332,1297,1713,916,745,333189,Mosha,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333190,Pratappur,VILLAGE,1140,251,570,570,830,310,365,333190,Pratappur,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333191,Damodarpur,VILLAGE,2516,463,1296,1220,1648,868,1046,333191,Damodarpur,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333192,Tajnagar,VILLAGE,1564,338,799,765,1104,460,483,333192,Tajnagar,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333193,Rengara,VILLAGE,748,154,390,358,571,177,271,333193,Rengara,False,False,0.0,True,False,True,True,False,False
+19,341,2411,333194,Nakol,VILLAGE,4610,969,2381,2229,3328,1282,1709,333194,Nakol,False,False,0.0,True,True,True,False,False,False
+19,341,2411,333195,Chaulia,VILLAGE,1189,294,598,591,586,603,405,333195,Chaulia,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333196,Baikunthapur,VILLAGE,4653,1053,2410,2243,3457,1196,1790,333196,Baikunthapur,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333197,Osmanpur,VILLAGE,1834,422,953,881,1414,420,689,333197,Osmanpur,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333198,Deora,VILLAGE,1911,415,981,930,1463,448,687,333198,Deora,False,False,0.0,True,True,True,True,False,False
+19,341,2411,333199,Samaspur,VILLAGE,2209,473,1148,1061,1531,678,1077,333199,Samaspur,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333200,Gaurangapur,VILLAGE,1223,275,634,589,879,344,436,333200,Gaurangapur,False,False,0.0,True,False,False,True,False,False
+19,341,2411,333201,Mukundapur,VILLAGE,1923,424,967,956,1416,507,670,333201,Mukundapur,False,False,0.0,True,False,True,True,False,False
+19,341,2411,333202,Kanthaldaha,VILLAGE,621,152,297,324,534,87,346,333202,Kanthaldaha,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333203,Kultikari,VILLAGE,4409,939,2285,2124,3131,1278,1534,333203,Kultikari,False,False,0.0,True,True,True,False,False,False
+19,341,2411,333204,Chanpabar,VILLAGE,4075,809,2124,1951,2752,1323,1425,333204,Chanpabar,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333205,Kulanandapur,VILLAGE,1717,361,865,852,1135,582,509,333205,Kulanandapur,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333206,Bhatughar,VILLAGE,979,214,483,496,543,436,291,333206,Bhatughar,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333207,Naoda,VILLAGE,3498,801,1781,1717,2305,1193,1265,333207,Naoda,False,False,0.0,True,True,True,False,False,False
+19,341,2411,333208,Sitapur,VILLAGE,3342,742,1718,1624,2168,1174,1125,333208,Sitapur,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333209,Ghugubeshe,VILLAGE,2096,465,1081,1015,1508,588,1029,333209,Ghugubeshe,False,False,0.0,True,False,False,False,False,False
+19,341,2411,333210,Rajibpur,VILLAGE,1455,325,749,706,1151,304,506,333210,Rajibpur,False,False,0.0,True,True,False,False,False,False
+19,341,2411,333211,Uttardurgapur,VILLAGE,2376,519,1228,1148,1737,639,828,333211,Uttardurgapur,False,False,0.0,True,True,False,False,False,False
+19,341,2411,333212,Basantapur,VILLAGE,729,165,389,340,563,166,264,333212,Basantapur,False,False,0.0,True,False,False,False,False,False
+19,341,2411,333213,Paikbar,VILLAGE,619,146,336,283,476,143,228,333213,Paikbar,False,False,0.0,True,False,False,False,False,False
+19,341,2411,333214,Manirampur,VILLAGE,343,77,178,165,234,109,190,333214,Manirampur,False,False,0.0,True,False,False,False,False,False
+19,341,2411,333215,Chathari,VILLAGE,393,97,206,187,273,120,172,333215,Chathari,False,False,0.0,True,False,False,False,False,False
+19,341,2411,333216,Ratanpur,VILLAGE,1248,289,644,604,818,430,429,333216,Ratanpur,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333217,Ghanashyampur,VILLAGE,2271,507,1174,1097,1592,679,1045,333217,Ghanashyampur,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333218,Amardaha,VILLAGE,2812,639,1478,1334,1815,997,1086,333218,Amardaha,False,False,0.0,True,False,False,False,False,False
+19,341,2411,333219,Gohalberia,VILLAGE,2225,442,1131,1094,1619,606,636,333219,Gohalberia,False,False,0.0,True,True,False,False,False,False
+19,341,2411,333220,Jonka,VILLAGE,1624,339,816,808,1072,552,553,333220,Jonka,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333221,Charabasulya,VILLAGE,832,186,412,420,621,211,237,333221,Charabasulya,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333222,Rana,VILLAGE,1315,253,694,621,919,396,371,333222,Rana,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333223,Krishnanagar,VILLAGE,1054,234,548,506,602,452,362,333223,Krishnanagar,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333224,Palgaria,VILLAGE,837,197,432,405,561,276,373,333224,Palgaria,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333225,Bachhari,VILLAGE,2876,590,1440,1436,2005,871,964,333225,Bachhari,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333226,Danpatia,VILLAGE,1555,365,784,771,1139,416,539,333226,Danpatia,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333227,Chilara,VILLAGE,609,136,310,299,469,140,248,333227,Chilara,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333228,Sajinagachhi,VILLAGE,719,183,359,360,586,133,269,333228,Sajinagachhi,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333229,Ganeshpur,VILLAGE,1239,298,634,605,924,315,404,333229,Ganeshpur,False,False,0.0,True,True,True,False,False,False
+19,341,2411,333230,Pashchim Gazipur,VILLAGE,2539,584,1279,1260,1877,662,1003,333230,Pashchim Gazipur,False,False,0.0,True,True,True,False,False,False
+19,341,2411,333231,Garchumbak,VILLAGE,3148,687,1614,1534,2320,828,1257,333231,Garchumbak,False,False,0.0,True,False,True,True,False,False
+19,341,2411,333232,Bargarchumbak,VILLAGE,5701,1266,2865,2836,3618,2083,1796,333232,Bargarchumbak,False,False,0.0,True,False,True,True,False,False
+19,341,2411,333233,Bargram,VILLAGE,5586,1222,2888,2698,4069,1517,2166,333233,Bargram,False,False,0.0,True,True,True,True,False,False
+19,341,2411,333234,Joarkul,VILLAGE,1384,316,707,677,1055,329,586,333234,Joarkul,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333235,Chhotaradhanagar,VILLAGE,2383,557,1203,1180,1808,575,921,333235,Chhotaradhanagar,False,False,0.0,True,False,True,True,False,False
+19,341,2411,333236,Narrottampur,VILLAGE,818,193,405,413,653,165,388,333236,Narrottampur,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333237,Ankul,VILLAGE,2203,533,1114,1089,1516,687,787,333237,Ankul,False,False,0.0,True,False,True,True,False,False
+19,341,2411,333238,Maula,VILLAGE,901,206,470,431,651,250,358,333238,Maula,False,False,0.0,True,True,True,False,False,False
+19,341,2411,333239,Satghara,VILLAGE,546,118,291,255,421,125,209,333239,Satghara,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333240,Kharubere,VILLAGE,1431,323,730,701,1001,430,488,333240,Kharubere,False,False,0.0,True,False,True,True,False,False
+19,341,2411,333241,Radhanagar,VILLAGE,5068,1100,2570,2498,3520,1548,1750,333241,Radhanagar,False,False,0.0,True,False,True,True,False,False
+19,341,2411,333242,Tripurapur,VILLAGE,2146,492,1094,1052,1469,677,698,333242,Tripurapur,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333243,Khajri,VILLAGE,915,192,478,437,726,189,317,333243,Khajri,False,False,0.0,True,True,False,False,False,False
+19,341,2411,333244,Sadashibpur,VILLAGE,1387,288,717,670,1105,282,739,333244,Sadashibpur,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333245,Uddhabpur,VILLAGE,2697,626,1373,1324,1820,877,1114,333245,Uddhabpur,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333246,Pashchim Basudebpur,VILLAGE,799,188,404,395,621,178,296,333246,Pashchim Basudebpur,False,False,0.0,True,False,True,True,False,False
+19,341,2411,333247,Ramnagar,VILLAGE,2820,698,1516,1304,2206,614,1124,333247,Ramnagar,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333248,Anantapur,VILLAGE,6256,1519,3197,3059,4827,1429,2132,333248,Anantapur,False,False,0.0,True,True,True,True,False,False
+19,341,2411,333249,Jhumjhumi,VILLAGE,5500,1278,2800,2700,3611,1889,1969,333249,Jhumjhumi,False,False,1.0,True,False,True,True,False,True
+19,341,2411,333250,Narikeldaha,VILLAGE,3717,799,1905,1812,2455,1262,1530,333250,Narikeldaha,False,False,0.0,True,False,True,True,False,False
+19,341,2411,333251,Ajodhya,VILLAGE,5670,1347,2925,2745,4310,1360,2121,333251,Ajodhya,False,False,0.0,True,True,True,True,False,False
+19,341,2411,333252,Chalitapara,VILLAGE,3686,893,1862,1824,2739,947,1308,333252,Chalitapara,False,False,0.0,True,True,True,True,False,False
+19,341,2411,333253,Sultanpur,VILLAGE,4514,1155,2261,2253,3008,1506,1795,333253,Sultanpur,False,False,0.0,True,False,False,True,False,False
+19,341,2411,333254,Baichi,VILLAGE,1553,365,784,769,1043,510,568,333254,Baichi,False,False,0.0,True,False,True,False,False,False
+19,341,2411,333255,Narayanpur,VILLAGE,4863,1058,2496,2367,3468,1395,1844,333255,Narayanpur,False,False,0.0,True,False,True,True,False,False
+19,341,2411,333256,Gobindapur,VILLAGE,4814,1098,2436,2378,3734,1080,1807,333256,Gobindapur,False,False,0.0,True,True,True,True,False,False
+19,341,2411,333257,Jaynagar,VILLAGE,5169,1231,2655,2514,3880,1289,1954,333257,Jaynagar,False,False,0.0,True,True,True,True,False,False
+19,341,2411,333258,Marshal,VILLAGE,2382,537,1231,1151,1744,638,924,333258,Marshal,False,False,0.0,True,False,True,False,False,False
