@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { api } from '../services/api';
-import './Infrastructure.css';
+import { Search, Filter, ShieldAlert } from 'lucide-react';
 
 export default function Infrastructure() {
   const [loading, setLoading] = useState(true);
@@ -28,252 +28,147 @@ export default function Infrastructure() {
 
   if (loading) {
     return (
-      <div className="infra-container">
-        <header className="infra-header">
-          <h2>Infrastructure Overview</h2>
-          <p>Monitor multi-sector facility availability across villages</p>
-        </header>
-        <div className="skeleton-container">
-          <div className="skeleton-row">
-            {[1, 2, 3, 4].map(i => <div key={i} className="skeleton-card"></div>)}
-          </div>
-          <div className="skeleton-content"></div>
+      <div className="space-y-6 animate-pulse">
+        <div className="h-16 bg-slate-200 dark:bg-slate-800 rounded-2xl w-1/3"></div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          {[1,2,3,4,5,6,7].map(i => <div key={i} className="h-32 bg-slate-200 dark:bg-slate-800 rounded-2xl"></div>)}
         </div>
+        <div className="h-[400px] bg-slate-200 dark:bg-slate-800 rounded-2xl"></div>
       </div>
     );
   }
 
   if (error) {
     return (
-      <div className="infra-container">
-        <div className="error-state">
-          <h2>⚠️ Connection Error</h2>
-          <p>{error}</p>
-          <button onClick={() => window.location.reload()} className="retry-btn">
-            Retry Connection
-          </button>
-        </div>
-      </div>
-    );
-  }
-
-  if (infrastructure.length === 0) {
-    return (
-      <div className="infra-container">
-        <div className="empty-state">
-          <h2>No Infrastructure Data</h2>
-          <p>There is currently no data available for this region.</p>
-        </div>
+      <div className="flex flex-col items-center justify-center h-full p-8 text-center bg-white dark:bg-slate-800 rounded-2xl border border-red-200 dark:border-red-900/50">
+        <ShieldAlert className="w-12 h-12 text-red-500 mb-4" />
+        <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Connection Error</h2>
+        <p className="text-slate-500 dark:text-slate-400 mb-6">{error}</p>
+        <button onClick={() => window.location.reload()} className="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors">
+          Retry Connection
+        </button>
       </div>
     );
   }
 
   const total = infrastructure.length;
-  
   const getCount = (key) => infrastructure.filter(i => i[key] === true).length;
-  
-  const stats = {
-    roads: getCount('pucca_road'),
-    water: getCount('tap_water_treated'),
-    healthcare: getCount('has_hospital'),
-    primaryEd: getCount('govt_primary_school'),
-    secondaryEd: getCount('govt_secondary_school'),
-    power: getCount('power_supply'),
-    transport: getCount('public_bus'),
-    atm: getCount('atm')
-  };
-
   const calcPercent = (count) => Math.round((count / total) * 100);
 
-  // Filter Logic
-  let filteredData = infrastructure;
-  
-  if (searchTerm) {
-    filteredData = filteredData.filter(v => 
-      v.village_code.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-  }
+  const stats = [
+    { title: 'Roads (Pucca)', icon: '🛣️', avail: getCount('pucca_road') },
+    { title: 'Treated Water', icon: '💧', avail: getCount('tap_water_treated') },
+    { title: 'Healthcare', icon: '🏥', avail: getCount('has_hospital') },
+    { title: 'Primary Edu', icon: '🏫', avail: getCount('govt_primary_school') },
+    { title: 'Secondary Edu', icon: '🎓', avail: getCount('govt_secondary_school') },
+    { title: 'Electricity', icon: '⚡', avail: getCount('power_supply') },
+    { title: 'Public Transport', icon: '🚌', avail: getCount('public_bus') },
+    { title: 'Financial (ATMs)', icon: '💳', avail: getCount('atm') }
+  ];
 
+  let filteredData = infrastructure;
+  if (searchTerm) {
+    filteredData = filteredData.filter(v => v.village_code.toLowerCase().includes(searchTerm.toLowerCase()));
+  }
   if (filter !== 'all') {
     filteredData = filteredData.filter(v => v[filter] === false);
   }
 
   return (
-    <div className="infra-container">
-      <header className="infra-header">
-        <h2>Infrastructure Overview</h2>
-        <p>Monitor multi-sector facility availability across {total} villages</p>
-      </header>
+    <div className="space-y-6">
+      <div>
+        <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Infrastructure Overview</h2>
+        <p className="text-slate-500 dark:text-slate-400">Monitor multi-sector facility availability across {total} villages.</p>
+      </div>
 
-      <section className="sector-cards">
-        <div className="sector-card">
-          <div className="sector-icon">🛣️</div>
-          <h3>Roads (Pucca)</h3>
-          <div className="sector-stats">
-            <div>
-              <span className="stat-label">Available</span>
-              <span className="stat-value">{calcPercent(stats.roads)}%</span>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {stats.map((s, i) => {
+          const availPct = calcPercent(s.avail);
+          return (
+            <div key={i} className="bg-white dark:bg-slate-800 p-5 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
+              <div className="text-2xl mb-3">{s.icon}</div>
+              <h3 className="font-semibold text-slate-900 dark:text-white mb-4">{s.title}</h3>
+              <div className="flex justify-between text-sm">
+                <div>
+                  <span className="block text-slate-500 dark:text-slate-400 text-xs uppercase tracking-wider mb-1">Available</span>
+                  <span className="font-bold text-blue-600 dark:text-blue-400 text-lg">{availPct}%</span>
+                </div>
+                <div>
+                  <span className="block text-slate-500 dark:text-slate-400 text-xs uppercase tracking-wider mb-1">Unavailable</span>
+                  <span className="font-bold text-red-500 dark:text-red-400 text-lg">{100 - availPct}%</span>
+                </div>
+              </div>
             </div>
-            <div>
-              <span className="stat-label">Unavailable</span>
-              <span className="stat-value error">{100 - calcPercent(stats.roads)}%</span>
-            </div>
-          </div>
-        </div>
+          )
+        })}
+      </div>
 
-        <div className="sector-card">
-          <div className="sector-icon">💧</div>
-          <h3>Treated Water</h3>
-          <div className="sector-stats">
-            <div>
-              <span className="stat-label">Available</span>
-              <span className="stat-value">{calcPercent(stats.water)}%</span>
+      <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm overflow-hidden flex flex-col h-[600px]">
+        <div className="p-4 border-b border-slate-200 dark:border-slate-700 flex flex-col sm:flex-row justify-between items-center gap-4 bg-slate-50 dark:bg-slate-900">
+          <h3 className="font-bold text-slate-900 dark:text-white">Village-Level Availability</h3>
+          <div className="flex gap-3 w-full sm:w-auto">
+            <div className="relative flex-1 sm:w-64">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+              <input 
+                type="text" 
+                placeholder="Search Village Code..." 
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full pl-9 pr-4 py-2 text-sm border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none dark:bg-slate-800 dark:text-white" 
+              />
             </div>
-            <div>
-              <span className="stat-label">Unavailable</span>
-              <span className="stat-value error">{100 - calcPercent(stats.water)}%</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="sector-card">
-          <div className="sector-icon">🏥</div>
-          <h3>Healthcare</h3>
-          <div className="sector-stats">
-            <div>
-              <span className="stat-label">Has Hospital</span>
-              <span className="stat-value">{stats.healthcare}</span>
-            </div>
-            <div>
-              <span className="stat-label">No Hospital</span>
-              <span className="stat-value error">{total - stats.healthcare}</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="sector-card">
-          <div className="sector-icon">🎓</div>
-          <h3>Education</h3>
-          <div className="sector-stats">
-            <div>
-              <span className="stat-label">Primary</span>
-              <span className="stat-value">{stats.primaryEd}</span>
-            </div>
-            <div>
-              <span className="stat-label">Secondary</span>
-              <span className="stat-value">{stats.secondaryEd}</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="sector-card">
-          <div className="sector-icon">⚡</div>
-          <h3>Electricity</h3>
-          <div className="sector-stats">
-            <div>
-              <span className="stat-label">Available</span>
-              <span className="stat-value">{calcPercent(stats.power)}%</span>
-            </div>
-            <div>
-              <span className="stat-label">Unavailable</span>
-              <span className="stat-value error">{100 - calcPercent(stats.power)}%</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="sector-card">
-          <div className="sector-icon">🚌</div>
-          <h3>Public Transport</h3>
-          <div className="sector-stats">
-            <div>
-              <span className="stat-label">Available</span>
-              <span className="stat-value">{calcPercent(stats.transport)}%</span>
-            </div>
-            <div>
-              <span className="stat-label">Unavailable</span>
-              <span className="stat-value error">{100 - calcPercent(stats.transport)}%</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="sector-card">
-          <div className="sector-icon">💳</div>
-          <h3>Financial (ATMs)</h3>
-          <div className="sector-stats">
-            <div>
-              <span className="stat-label">Available</span>
-              <span className="stat-value">{calcPercent(stats.atm)}%</span>
-            </div>
-            <div>
-              <span className="stat-label">Unavailable</span>
-              <span className="stat-value error">{100 - calcPercent(stats.atm)}%</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="village-details">
-        <div className="village-header">
-          <h3>Village-Level Availability</h3>
-          <div className="controls">
-            <input 
-              type="text" 
-              placeholder="Search Village Code..." 
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="search-input"
-            />
             <select 
               value={filter} 
               onChange={(e) => setFilter(e.target.value)}
-              className="filter-select"
+              className="px-3 py-2 text-sm border border-slate-200 dark:border-slate-700 rounded-lg outline-none bg-white dark:bg-slate-800 dark:text-white"
             >
               <option value="all">Show All</option>
               <option value="pucca_road">Missing Roads</option>
               <option value="tap_water_treated">Missing Water</option>
               <option value="has_hospital">Missing Hospital</option>
-              <option value="govt_primary_school">Missing Primary School</option>
               <option value="power_supply">Missing Electricity</option>
             </select>
           </div>
         </div>
 
-        <div className="table-container">
-          <table className="village-table">
-            <thead>
+        <div className="flex-1 overflow-auto">
+          <table className="w-full text-left border-collapse">
+            <thead className="bg-slate-50 dark:bg-slate-900/50 sticky top-0 z-10">
               <tr>
-                <th>Village Code</th>
-                <th>Roads</th>
-                <th>Water</th>
-                <th>Hospital</th>
-                <th>Primary Ed.</th>
-                <th>Secondary Ed.</th>
-                <th>Power</th>
-                <th>Transport</th>
-                <th>ATM</th>
+                <th className="px-6 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider border-b border-slate-200 dark:border-slate-700">Code</th>
+                <th className="px-4 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider border-b border-slate-200 dark:border-slate-700 text-center">Roads</th>
+                <th className="px-4 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider border-b border-slate-200 dark:border-slate-700 text-center">Water</th>
+                <th className="px-4 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider border-b border-slate-200 dark:border-slate-700 text-center">Hospital</th>
+                <th className="px-4 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider border-b border-slate-200 dark:border-slate-700 text-center">1° Edu.</th>
+                <th className="px-4 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider border-b border-slate-200 dark:border-slate-700 text-center">2° Edu.</th>
+                <th className="px-4 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider border-b border-slate-200 dark:border-slate-700 text-center">Power</th>
+                <th className="px-4 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider border-b border-slate-200 dark:border-slate-700 text-center">Bus</th>
+                <th className="px-4 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider border-b border-slate-200 dark:border-slate-700 text-center">ATM</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="divide-y divide-slate-100 dark:divide-slate-700/50">
               {filteredData.map(v => (
-                <tr key={v.village_code}>
-                  <td className="code-cell">{v.village_code}</td>
-                  <td>{v.pucca_road ? '✅' : '❌'}</td>
-                  <td>{v.tap_water_treated ? '✅' : '❌'}</td>
-                  <td>{v.has_hospital ? '✅' : '❌'}</td>
-                  <td>{v.govt_primary_school ? '✅' : '❌'}</td>
-                  <td>{v.govt_secondary_school ? '✅' : '❌'}</td>
-                  <td>{v.power_supply ? '✅' : '❌'}</td>
-                  <td>{v.public_bus ? '✅' : '❌'}</td>
-                  <td>{v.atm ? '✅' : '❌'}</td>
+                <tr key={v.village_code} className="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+                  <td className="px-6 py-4 font-mono text-sm font-medium text-blue-600 dark:text-blue-400">{v.village_code}</td>
+                  <td className="px-4 py-4 text-center">{v.pucca_road ? '✅' : '❌'}</td>
+                  <td className="px-4 py-4 text-center">{v.tap_water_treated ? '✅' : '❌'}</td>
+                  <td className="px-4 py-4 text-center">{v.has_hospital ? '✅' : '❌'}</td>
+                  <td className="px-4 py-4 text-center">{v.govt_primary_school ? '✅' : '❌'}</td>
+                  <td className="px-4 py-4 text-center">{v.govt_secondary_school ? '✅' : '❌'}</td>
+                  <td className="px-4 py-4 text-center">{v.power_supply ? '✅' : '❌'}</td>
+                  <td className="px-4 py-4 text-center">{v.public_bus ? '✅' : '❌'}</td>
+                  <td className="px-4 py-4 text-center">{v.atm ? '✅' : '❌'}</td>
                 </tr>
               ))}
             </tbody>
           </table>
           {filteredData.length === 0 && (
-            <div className="no-results">No villages match the selected filters.</div>
+            <div className="p-12 text-center text-slate-500 dark:text-slate-400">
+              No villages match the selected filters.
+            </div>
           )}
         </div>
-      </section>
+      </div>
     </div>
   );
 }
