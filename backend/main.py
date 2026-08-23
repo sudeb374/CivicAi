@@ -120,7 +120,7 @@ def get_all_districts(db: Session = Depends(get_db)):
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/api/demographics", response_model=List[schemas.DemographicSchema])
-def get_all_demographics(district_id: Optional[str] = None, limit: int = Query(100, ge=1, le=1000), db: Session = Depends(get_db)):
+def get_all_demographics(district_id: Optional[str] = None, limit: int = Query(1000, ge=1, le=2000), db: Session = Depends(get_db)):
     try:
         query = db.query(Demographic)
         if district_id:
@@ -130,7 +130,7 @@ def get_all_demographics(district_id: Optional[str] = None, limit: int = Query(1
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/api/infrastructure", response_model=List[schemas.InfrastructureSchema])
-def get_all_infrastructure(limit: int = Query(100, ge=1, le=1000), db: Session = Depends(get_db)):
+def get_all_infrastructure(limit: int = Query(1000, ge=1, le=2000), db: Session = Depends(get_db)):
     try:
         return db.query(Infrastructure).limit(limit).all()
     except Exception as e:
@@ -240,20 +240,6 @@ def get_demand_hotspots(db: Session = Depends(get_db)):
         for h in hotspots
     ]
 
-@app.get("/api/recommendations")
-def get_day2_recommendations(db: Session = Depends(get_db)):
-    # In a real app, AI generates recommendations from aggregate data.
-    # We return the top 5 critical complaints.
-    critical = db.query(Complaint).filter(Complaint.priority_level == "Critical").limit(5).all()
-    return [
-        {
-            "complaint_id": c.id,
-            "sector": c.sector,
-            "priority_score": c.priority_score,
-            "village": c.village or "Unknown",
-            "recommended_action": f"Immediate action required for {c.category} issue."
-        } for c in critical
-    ]
 
 @app.get("/api/government-insights", response_model=schemas.GovernmentInsightsResponse)
 def get_government_insights(db: Session = Depends(get_db)):

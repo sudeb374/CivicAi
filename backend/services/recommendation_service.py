@@ -1,21 +1,33 @@
 from sqlalchemy.orm import Session
-from backend.services.hotspot_service import get_hotspots
+from sqlalchemy import func
+from backend.models import Complaint
 from backend.services.priority_engine import get_priority_level
+from backend.services.ai_service import generate_recommendation_text
 
 def get_recommendations(db: Session) -> list:
-    hotspots = get_hotspots(db)
+    hotspots = db.query(
+        Complaint.village,
+        Complaint.sector,
+        func.count(Complaint.id).label('request_count'),
+        func.avg(Complaint.priority_score).label('avg_score')
+    ).group_by(Complaint.village, Complaint.sector).order_by(func.count(Complaint.id).desc()).limit(3).all()
     
     recommendations = []
     for h in hotspots:
-        if h["priority_score"] >= 70:
-            rec = {
-                "district": h["district"],
-                "category": h["category"],
-                "priority_score": h["priority_score"],
-                "priority_level": get_priority_level(h["priority_score"]),
-                "reason": f"High citizen demand ({h['request_count']} requests) and infrastructure gap in {h['category']}.",
-                "recommended_action": f"Prioritize {h['category']} infrastructure development in {h['district']}."
-            }
-            recommendations.append(rec)
+        reason, action = generate_recommendation_text(
+            district=h.village or "Unknown",
+            category=h.sector or "Unknown",
+            request_count=h.request_count,
+            priority_score=round(h.avg_score, 2)
+        )
+        rec = {
+            "district": h.village or "Unknown",
+            "category": h.sector or "Unknown",
+            "priority_score": round(h.avg_score, 2),
+            "priority_level": get_priority_level(h.avg_score),
+            "reason": reason,
+            "recommended_action": action
+        }
+        recommendations.append(rec)
             
     return recommendations

@@ -8,18 +8,21 @@ export default function Dashboard() {
   const [error, setError] = useState(null);
   const [demographics, setDemographics] = useState([]);
   const [infrastructure, setInfrastructure] = useState([]);
+  const [complaints, setComplaints] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
       try {
         setLoading(true);
         setError(null);
-        const [demoData, infraData] = await Promise.all([
+        const [demoData, infraData, compData] = await Promise.all([
           api.getDemographics(),
-          api.getInfrastructure()
+          api.getInfrastructure(),
+          api.getComplaints()
         ]);
         setDemographics(demoData || []);
         setInfrastructure(infraData || []);
+        setComplaints(compData || []);
       } catch (err) {
         console.error('Error fetching dashboard data:', err);
         setError(err.message || 'Failed to load dashboard data.');
@@ -74,25 +77,45 @@ export default function Dashboard() {
   const avgAvailability = Object.values(availability).reduce((sum, val) => sum + val, 0) / Object.values(availability).length;
   const infraGapsPercent = 100 - avgAvailability;
 
-  // Mock chart data for UI
-  const chartData = [
-    { name: 'Jan', requests: 400 },
-    { name: 'Feb', requests: 300 },
-    { name: 'Mar', requests: 550 },
-    { name: 'Apr', requests: 450 },
-    { name: 'May', requests: 700 },
-    { name: 'Jun', requests: 650 },
-  ];
+  // Group complaints by month for the chart
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const currentMonthIdx = new Date().getMonth();
+  
+  // Create last 6 months list
+  const last6Months = [];
+  for (let i = 5; i >= 0; i--) {
+    let m = currentMonthIdx - i;
+    if (m < 0) m += 12;
+    last6Months.push({ name: months[m], monthIdx: m, requests: 0 });
+  }
+  
+  complaints.forEach(c => {
+    const d = new Date(c.created_at);
+    const m = d.getMonth();
+    const entry = last6Months.find(l => l.monthIdx === m);
+    if (entry) {
+      entry.requests += 1;
+    }
+  });
+
+  const chartData = last6Months.map(({name, requests}) => ({name, requests}));
 
   return (
     <div className="space-y-6">
-      <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-3xl p-8 text-white shadow-lg relative overflow-hidden">
-        <div className="absolute top-0 right-0 p-8 opacity-20">
+      <div className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-[length:200%_200%] animate-gradient-x rounded-3xl p-8 sm:p-10 text-white shadow-[0_8px_30px_rgb(0,0,0,0.12)] relative overflow-hidden group">
+        {/* Decorative glass orbs */}
+        <div className="absolute top-[-20%] right-[-5%] w-64 h-64 bg-white/10 rounded-full blur-3xl group-hover:scale-110 transition-transform duration-700"></div>
+        <div className="absolute bottom-[-20%] left-[10%] w-48 h-48 bg-blue-400/20 rounded-full blur-2xl animate-float"></div>
+        
+        <div className="absolute top-0 right-0 p-8 opacity-20 animate-float" style={{ animationDelay: '1s' }}>
           <Sparkles className="w-32 h-32" />
         </div>
         <div className="relative z-10">
-          <h2 className="text-3xl font-bold mb-2">AI-Powered Governance Dashboard</h2>
-          <p className="text-blue-100 max-w-2xl text-lg">Real-time monitoring, predictive analytics, and automated grievance resolution for {totalVillages.toLocaleString()} villages.</p>
+          <div className="inline-block px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-sm font-medium mb-6 animate-pulse">
+            Live AI Monitoring Active
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 tracking-tight">AI-Powered Governance Dashboard</h2>
+          <p className="text-blue-50/90 max-w-2xl text-lg leading-relaxed">Real-time monitoring, predictive analytics, and automated grievance resolution for <strong className="text-white">{totalVillages.toLocaleString()}</strong> villages across the region.</p>
         </div>
       </div>
 
@@ -103,23 +126,26 @@ export default function Dashboard() {
           { label: 'Total Households', value: totalHouseholds.toLocaleString(), icon: Home, color: 'text-amber-600 bg-amber-100 dark:bg-amber-900/30' },
           { label: 'Infrastructure Gap', value: `${Math.round(infraGapsPercent)}%`, icon: Activity, color: 'text-red-600 bg-red-100 dark:bg-red-900/30' },
         ].map((stat, i) => (
-          <div key={i} className="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm flex items-center gap-4">
-            <div className={`p-4 rounded-xl ${stat.color}`}>
-              <stat.icon className="w-6 h-6" />
-            </div>
-            <div>
-              <p className="text-sm font-medium text-slate-500 dark:text-slate-400">{stat.label}</p>
-              <h3 className="text-2xl font-bold text-slate-900 dark:text-white mt-1">{stat.value}</h3>
+          <div key={i} className="group bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200/60 dark:border-slate-700/60 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-transparent to-transparent group-hover:from-blue-400 group-hover:via-indigo-500 group-hover:to-purple-500 transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
+            <div className="flex items-center gap-4">
+              <div className={`p-4 rounded-2xl transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3 ${stat.color}`}>
+                <stat.icon className="w-6 h-6" />
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{stat.label}</p>
+                <h3 className="text-3xl font-bold text-slate-900 dark:text-white mt-1.5">{stat.value}</h3>
+              </div>
             </div>
           </div>
         ))}
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div className="col-span-1 lg:col-span-2 bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
-           <div className="flex justify-between items-center mb-6">
-             <h3 className="text-lg font-bold text-slate-900 dark:text-white">Citizen Request Volume</h3>
-             <span className="flex items-center gap-1 text-sm text-emerald-600 bg-emerald-50 dark:bg-emerald-900/30 px-3 py-1 rounded-full"><TrendingUp className="w-4 h-4"/> +14% this month</span>
+        <div className="col-span-1 lg:col-span-2 bg-white dark:bg-slate-800 p-6 sm:p-8 rounded-2xl border border-slate-200/60 dark:border-slate-700/60 shadow-sm hover:shadow-md transition-shadow">
+           <div className="flex justify-between items-center mb-8">
+             <h3 className="text-xl font-bold text-slate-900 dark:text-white">Citizen Request Volume</h3>
+             <span className="flex items-center gap-1.5 text-sm font-semibold text-emerald-700 bg-emerald-100 dark:text-emerald-400 dark:bg-emerald-900/40 px-4 py-1.5 rounded-full shadow-sm"><TrendingUp className="w-4 h-4"/> +14% this month</span>
            </div>
            <div className="h-64">
              <ResponsiveContainer width="100%" height="100%">
@@ -140,8 +166,8 @@ export default function Dashboard() {
            </div>
         </div>
         
-        <div className="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm flex flex-col">
-          <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-6">Infrastructure Availability</h3>
+        <div className="bg-white dark:bg-slate-800 p-6 sm:p-8 rounded-2xl border border-slate-200/60 dark:border-slate-700/60 shadow-sm hover:shadow-md transition-shadow flex flex-col">
+          <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-8">Infrastructure Availability</h3>
           <div className="flex-1 space-y-4">
             {Object.entries(availability).map(([key, percent]) => (
               <div key={key}>

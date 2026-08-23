@@ -8,7 +8,7 @@ logger = logging.getLogger(__name__)
 if settings.GEMINI_API_KEY:
     try:
         genai.configure(api_key=settings.GEMINI_API_KEY)
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.5-flash')
     except Exception as e:
         logger.error(f"Failed to configure Gemini: {e}")
         model = None
@@ -181,3 +181,41 @@ def analyze_complaint_v2(text: str) -> dict:
     except Exception as e:
         logger.error(f"Gemini API failed v2: {e}")
         return _demo_mode_analyze_v2(text)
+
+def generate_recommendation_text(district: str, category: str, request_count: int, priority_score: float) -> tuple[str, str]:
+    if not model:
+        reason = f"High citizen demand ({request_count} requests) and infrastructure gap in {category}."
+        action = f"Prioritize {category} infrastructure development in {district}."
+        return reason, action
+        
+    prompt = f"""
+    You are an AI advisor for the Indian government. 
+    A priority hotspot has emerged in the district of {district}.
+    The critical sector/category is {category}.
+    There are {request_count} urgent requests clustered here with a high severity score of {priority_score}/100.
+    
+    Please provide:
+    1. A 1-sentence analytical reason (under 25 words).
+    2. A 1-sentence recommended action for policymakers (under 20 words).
+    
+    Respond strictly in this JSON format:
+    {{
+      "reason": "...",
+      "action": "..."
+    }}
+    """
+    try:
+        response = model.generate_content(prompt)
+        result_text = response.text.strip()
+        if result_text.startswith("```json"):
+            result_text = result_text[7:-3]
+        elif result_text.startswith("```"):
+            result_text = result_text[3:-3]
+            
+        data = json.loads(result_text)
+        return data.get("reason", ""), data.get("action", "")
+    except Exception as e:
+        logger.error(f"Gemini API failed recommendation generation: {e}")
+        reason = f"High citizen demand ({request_count} requests) and infrastructure gap in {category}."
+        action = f"Prioritize {category} infrastructure development in {district}."
+        return reason, action

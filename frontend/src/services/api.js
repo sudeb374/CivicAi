@@ -50,4 +50,20 @@ export const api = {
   getDistricts: () => fetchWithHandling('/api/districts'),
   getDemographics: () => fetchWithHandling('/api/demographics'),
   getInfrastructure: () => fetchWithHandling('/api/infrastructure'),
+  
+  // Day 2 Endpoints
+  getComplaints: (params = {}) => {
+    const query = new URLSearchParams(params).toString();
+    return fetchWithHandling(`/api/complaints${query ? '?' + query : ''}`);
+  },
+  getComplaint: (id) => fetchWithHandling(`/api/complaints/${id}`),
+  createComplaint: (data) => fetchWithHandling('/api/complaints', {
+    method: 'POST',
+    body: JSON.stringify(data),
+  }),
+  getPriorityIssues: () => fetchWithHandling('/api/priority-issues'),
+  getDemandHotspots: () => fetchWithHandling('/api/demand-hotspots'),
+  getRecommendations: () => fetchWithHandling('/api/recommendations'),
+  getGovernmentInsights: () => fetchWithHandling('/api/government-insights'),
+  getAiAnalysis: () => fetchWithHandling('/api/ai-analysis'),
 };
