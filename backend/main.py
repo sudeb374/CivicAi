@@ -37,9 +37,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+def root():
+    return {"status": "ok", "service": "CivicAI API", "version": "1.0.0"}
+
 @app.get("/api/health")
 def health_check():
     return {"status": "ok", "service": "CivicAI API"}
+
 
 @app.post("/api/analyze", response_model=schemas.RequestAnalyzeOutput)
 def analyze(input_data: schemas.RequestAnalyzeInput):

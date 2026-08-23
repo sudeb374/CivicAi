@@ -1,8 +1,9 @@
+import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 from backend.config import settings
 
-db_url = settings.DATABASE_URL
+db_url = settings.effective_database_url
 if db_url.startswith("postgres://"):
     db_url = db_url.replace("postgres://", "postgresql://", 1)
 
@@ -24,4 +25,3 @@ def get_db():
         yield db
     finally:
         db.close()
-
