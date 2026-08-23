@@ -1,1 +1,10 @@
--r ../backend/requirements.txt
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+pydantic-settings
+google-generativeai
+python-dotenv
+httpx
+pytest
+pytest-asyncio
