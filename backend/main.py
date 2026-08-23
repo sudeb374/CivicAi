@@ -1,7 +1,10 @@
 from fastapi import FastAPI, Depends, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from sqlalchemy.orm import Session
 from typing import List, Optional
+import os
 
 from backend.database import engine, Base, get_db
 from backend.models import CitizenRequest, District, Demographic, Infrastructure, Complaint
@@ -293,3 +296,19 @@ def get_ai_analysis_stats(db: Session = Depends(get_db)):
         common_categories={x[0] or "Unknown": x[1] for x in cat_dist},
         severity_distribution={x[0] or "Unknown": x[1] for x in sev_dist}
     )
+
+# =========================================================================
+# Serve Frontend
+# =========================================================================
+
+frontend_dist = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "frontend", "dist")
+
+if os.path.isdir(frontend_dist):
+    app.mount("/assets", StaticFiles(directory=os.path.join(frontend_dist, "assets")), name="assets")
+
+    @app.get("/{catchall:path}")
+    def serve_frontend(catchall: str):
+        file_path = os.path.join(frontend_dist, catchall)
+        if os.path.isfile(file_path):
+            return FileResponse(file_path)
+        return FileResponse(os.path.join(frontend_dist, "index.html"))
