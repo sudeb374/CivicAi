@@ -1,98 +1,218 @@
-# 🏛️ CivicAI - AI for Digital Public Infrastructure & Governance
+<div align="center">
 
-Governments across India struggle to consolidate citizen feedback and align it with national infrastructure priorities. **CivicAI** is a scalable, multilingual AI platform designed as a Digital Public Good. It aggregates citizen development requests via voice and text across diverse linguistic regions, surfacing demand hotspots and recommending high-priority development projects to national policymakers.
+# 🏛️ CivicAI
 
----
+### AI for Digital Public Infrastructure & Governance
 
-## ✨ Key Features
+<p>
+  <strong>Turning citizen voices into actionable infrastructure priorities.</strong>
+</p>
 
-1. **🎙️ Multilingual Grievance Portal**
-   - Citizens can submit complaints in their native language (e.g., Bengali, Hindi, English) using text or **voice recording**.
-   - The platform uses the Google Gemini AI API to instantly translate, categorize, and prioritize the complaint.
+<p>
+  A multilingual AI-powered civic intelligence platform that transforms
+  citizen complaints and development requests into structured,
+  prioritized insights for government decision-making.
+</p>
 
-2. **📊 Real-time Government Dashboard**
-   - A stunning, glassmorphism-inspired React dashboard tailored for government officials.
-   - Tracks infrastructure gaps, citizen request volumes over time, and demographic data across hundreds of villages.
+<br/>
 
-3. **🔥 Demand Hotspots Engine**
-   - An intelligent backend service that aggregates incoming complaints by geographical location and sector (e.g., water, education, roads) to identify urgent infrastructure "hotspots".
+<img src="https://img.shields.io/badge/AI-Gemini-blue?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Backend-FastAPI-green?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Database-SQLite-003B57?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Hackathon-2026-orange?style=for-the-badge" />
 
-4. **🤖 AI-Driven Policy Recommendations**
-   - CivicAI actively queries Gemini 2.5 Flash to generate actionable, strategic policy advice based on real-time hotspot data, guiding national infrastructure investments.
+<br/><br/>
 
----
-
-## 🛠️ Tech Stack
-
-**Frontend:**
-- React (Vite)
-- Tailwind CSS (v4) with custom keyframe animations and glassmorphism styling
-- Recharts for data visualization
-- Lucide React for iconography
-
-**Backend:**
-- Python 3 / FastAPI
-- SQLite (SQLAlchemy ORM) for lightweight, robust data storage
-- Google Generative AI (`gemini-2.5-flash`) for NLP and translation
-- Pandas for infrastructure data processing
+</div>
 
 ---
 
-## 🚀 Setup & Installation
+## 🌍 The Problem
 
-Follow these steps to run the CivicAI prototype on your local machine.
+Governments across India receive large amounts of citizen feedback through
+different channels, languages, and systems.
 
-### 1. Prerequisites
-- Node.js (v18+)
-- Python (v3.10+)
-- A Google Gemini API Key
+However, citizen requests are often:
 
-### 2. Backend Setup
-Navigate to the backend folder, set up your environment, and start the FastAPI server.
+- Unstructured
+- Written in different languages
+- Difficult to categorize
+- Difficult to compare geographically
+- Difficult to prioritize
+- Separated from infrastructure and demographic information
 
-```bash
-cd backend
-python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
-pip install -r requirements.txt
-```
+This makes it difficult for decision-makers to answer:
 
-**Environment Variables:**
-Create a `.env` file in the root directory (or in `backend/`) and add your Gemini Key:
-```env
-GEMINI_API_KEY=your_google_gemini_api_key_here
-```
-
-**Seed the Database & Run Server:**
-```bash
-# Optional: Seed the database with realistic sample complaints
-python scripts/seed_complaints.py
-
-# Start the backend server
-uvicorn main:app --reload --port 8000
-```
-The API will be available at `http://127.0.0.1:8000`.
-
-### 3. Frontend Setup
-Open a new terminal window, navigate to the frontend folder, and start the Vite dev server.
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-The React dashboard will be available at `http://localhost:5173`.
+> **What is the problem? Where is it happening? How urgent is it? How many citizens are affected? What should be prioritized first?**
 
 ---
 
-## 🏗️ Project Architecture & Data Flow
+## 💡 Our Solution
 
-1. **Citizen Input:** A user submits a complaint via the React frontend (`VoiceComplaints.jsx`).
-2. **AI Processing:** The FastAPI backend receives the request and sends it to the `ai_service`. Gemini translates the text to English, assigns a severity score (0-100), and categorizes it (e.g., "Water", "Roads").
-3. **Storage:** The structured data is saved to the SQLite `complaints` table.
-4. **Aggregation:** The `hotspot_service` routinely scans the database to group complaints by village, surfacing the most critical areas.
-5. **Government Insights:** The frontend fetches these hotspots and displays them to officials. The `recommendation_service` generates bespoke AI advice for solving the top hotspots.
+<div align="center">
+
+### 🗣️ Citizen Voice → 🤖 AI Understanding → ⚡ Priority → 🏛️ Government Decision
+
+</div>
+
+**CivicAI** creates an intelligence layer between citizens and government
+decision-makers.
+
+Citizens can submit development requests using **text or voice in their
+local language**.
+
+CivicAI then:
+
+1. Understands the citizen's request
+2. Detects the language
+3. Translates when required
+4. Identifies the sector and category
+5. Extracts location when available
+6. Determines urgency and severity
+7. Calculates a priority score
+8. Stores the structured complaint
+9. Identifies demand hotspots
+10. Generates decision-support recommendations
 
 ---
 
-*Built with ❤️ for the AI for Digital Public Infrastructure Hackathon.*
+# ✨ Key Features
+
+<table>
+<tr>
+
+<td width="50%" valign="top">
+
+### 🎙️ Multilingual Complaints
+
+Citizens can submit complaints through text or voice.
+
+Supported inputs can include:
+
+- 🇮🇳 Bengali
+- 🇮🇳 Hindi
+- 🇬🇧 English
+- Other supported languages
+
+The original citizen input is preserved while AI converts it into structured
+civic information.
+
+</td>
+
+<td width="50%" valign="top">
+
+### 🤖 AI Complaint Analysis
+
+AI analyzes unstructured citizen requests and extracts:
+
+- Language
+- Translation
+- Sector
+- Category
+- Location
+- Urgency
+- Severity
+- Summary
+- Recommended action
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%" valign="top">
+
+### ⚡ Priority Engine
+
+Every complaint does not require the same level of attention.
+
+CivicAI uses a backend Priority Engine to calculate a priority score based on
+the structured complaint information.
+
+The frontend does not independently calculate priority.
+
+</td>
+
+<td width="50%" valign="top">
+
+### 🔥 Demand Hotspots
+
+Multiple complaints can indicate a larger community-level problem.
+
+CivicAI aggregates requests by location and sector to identify areas with
+concentrated civic demand.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%" valign="top">
+
+### 🏛️ Government Insights
+
+Government officials can view aggregated information including:
+
+- Complaint volume
+- Sector distribution
+- Urgency
+- Severity
+- Status
+- Priority issues
+- Demand hotspots
+
+</td>
+
+<td width="50%" valign="top">
+
+### 💡 AI Recommendations
+
+CivicAI can generate recommendations from analyzed high-priority civic
+demands to help officials understand what action may deserve attention.
+
+</td>
+
+</tr>
+</table>
+
+---
+
+# 🧠 How CivicAI Works
+
+<div align="center">
+
+```text
+                    👥 CITIZENS
+                         │
+               ┌─────────┴─────────┐
+               │                   │
+             📝 Text             🎙️ Voice
+               │                   │
+               └─────────┬─────────┘
+                         ↓
+                 🌐 React Frontend
+                         │
+                    HTTP / REST
+                         ↓
+                 ⚡ FastAPI Backend
+                         │
+          ┌──────────────┼──────────────┐
+          │              │              │
+          ↓              ↓              ↓
+     🤖 AI Service    🗄️ SQLite    ⚡ Priority Engine
+          │              │              │
+          └──────────────┼──────────────┘
+                         ↓
+                 📊 Aggregation Layer
+                         │
+             ┌───────────┼───────────┐
+             ↓           ↓           ↓
+          🔥 Hotspots  ⚠️ Issues   💡 Recommendations
+             │           │           │
+             └───────────┼───────────┘
+                         ↓
+                 🏛️ Government
+                    Dashboard
