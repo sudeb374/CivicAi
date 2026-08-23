@@ -16,9 +16,11 @@ ENV/
 
 # Node
 node_modules/
-dist/
 build/
 .npm/
+!frontend/dist/
+!frontend/dist/**
+
 
 # IDE
 .vscode/

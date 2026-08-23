@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Depends, HTTPException, Query
+from fastapi import FastAPI, APIRouter, Depends, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
@@ -15,7 +15,6 @@ from backend.services.analytics_service import get_dashboard_analytics
 from backend.services.hotspot_service import get_hotspots
 from backend.services.recommendation_service import get_recommendations
 from backend.config import settings
-
 from backend.scripts.seed_db import seed_database
 
 # Create DB tables and seed real data if database is new/empty
@@ -27,7 +26,6 @@ except Exception as e:
 
 app = FastAPI(title=settings.PROJECT_NAME)
 
-
 # CORS
 app.add_middleware(
     CORSMiddleware,
@@ -37,16 +35,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/")
-def root():
-    return {"status": "ok", "service": "CivicAI API", "version": "1.0.0"}
+api_router = APIRouter()
 
-@app.get("/api/health")
+@api_router.get("/health")
 def health_check():
     return {"status": "ok", "service": "CivicAI API"}
 
-
-@app.post("/api/analyze", response_model=schemas.RequestAnalyzeOutput)
+@api_router.post("/analyze", response_model=schemas.RequestAnalyzeOutput)
 def analyze(input_data: schemas.RequestAnalyzeInput):
     try:
         result = analyze_complaint(input_data.text)
@@ -54,7 +49,7 @@ def analyze(input_data: schemas.RequestAnalyzeInput):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.post("/api/requests", response_model=schemas.CitizenRequestResponse)
+@api_router.post("/requests", response_model=schemas.CitizenRequestResponse)
 def create_request(request_data: schemas.CitizenRequestCreate, db: Session = Depends(get_db)):
     try:
         # Calculate priority
@@ -85,7 +80,7 @@ def create_request(request_data: schemas.CitizenRequestCreate, db: Session = Dep
         db.rollback()
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/api/requests", response_model=List[schemas.CitizenRequestDetail])
+@api_router.get("/requests", response_model=List[schemas.CitizenRequestDetail])
 def get_requests(
     state: Optional[str] = None,
     district: Optional[str] = None,
@@ -106,35 +101,35 @@ def get_requests(
         
     return query.all()
 
-@app.get("/api/analytics/dashboard", response_model=schemas.DashboardAnalytics)
+@api_router.get("/analytics/dashboard", response_model=schemas.DashboardAnalytics)
 def dashboard(db: Session = Depends(get_db)):
     try:
         return get_dashboard_analytics(db)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/api/hotspots", response_model=List[schemas.HotspotResponse])
+@api_router.get("/hotspots", response_model=List[schemas.HotspotResponse])
 def hotspots(db: Session = Depends(get_db)):
     try:
         return get_hotspots(db)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/api/recommendations", response_model=List[schemas.RecommendationResponse])
+@api_router.get("/recommendations", response_model=List[schemas.RecommendationResponse])
 def recommendations(db: Session = Depends(get_db)):
     try:
         return get_recommendations(db)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/api/districts", response_model=List[schemas.DistrictSchema])
+@api_router.get("/districts", response_model=List[schemas.DistrictSchema])
 def get_all_districts(db: Session = Depends(get_db)):
     try:
         return db.query(District).all()
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/api/demographics", response_model=List[schemas.DemographicSchema])
+@api_router.get("/demographics", response_model=List[schemas.DemographicSchema])
 def get_all_demographics(district_id: Optional[str] = None, limit: int = Query(1000, ge=1, le=2000), db: Session = Depends(get_db)):
     try:
         query = db.query(Demographic)
@@ -144,7 +139,7 @@ def get_all_demographics(district_id: Optional[str] = None, limit: int = Query(1
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/api/infrastructure", response_model=List[schemas.InfrastructureSchema])
+@api_router.get("/infrastructure", response_model=List[schemas.InfrastructureSchema])
 def get_all_infrastructure(limit: int = Query(1000, ge=1, le=2000), db: Session = Depends(get_db)):
     try:
         return db.query(Infrastructure).limit(limit).all()
@@ -152,23 +147,21 @@ def get_all_infrastructure(limit: int = Query(1000, ge=1, le=2000), db: Session 
         raise HTTPException(status_code=500, detail=str(e))
 
 # =========================================================================
-# DAY 2: Citizen Complaint and Decision-Support Endpoints
+# Citizen Complaint and Decision-Support Endpoints
 # =========================================================================
 
-@app.post("/api/complaints", response_model=schemas.ComplaintResponse)
+@api_router.post("/complaints", response_model=schemas.ComplaintResponse)
 def create_complaint(request_data: schemas.ComplaintCreate, db: Session = Depends(get_db)):
     try:
         # 1. AI Analysis
         ai_result = analyze_complaint_v2(request_data.text)
         
         # 2. Location Mapping
-        # If user explicitly passed a location, use it. Otherwise, rely on AI extraction.
         village_name = request_data.location or ai_result.get("location")
         village_code = None
         district = None
         
         if village_name:
-            # Try to resolve against demographics (exact match first as per instructions)
             demo = db.query(Demographic).filter(Demographic.village_name.ilike(village_name)).first()
             if demo:
                 village_code = demo.village_code
@@ -208,7 +201,7 @@ def create_complaint(request_data: schemas.ComplaintCreate, db: Session = Depend
         db.rollback()
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/api/complaints", response_model=List[schemas.ComplaintResponse])
+@api_router.get("/complaints", response_model=List[schemas.ComplaintResponse])
 def get_complaints(
     sector: Optional[str] = None,
     priority_level: Optional[str] = None,
@@ -221,22 +214,20 @@ def get_complaints(
         query = query.filter(Complaint.priority_level == priority_level)
     return query.order_by(Complaint.created_at.desc()).all()
 
-@app.get("/api/complaints/{id}", response_model=schemas.ComplaintResponse)
+@api_router.get("/complaints/{id}", response_model=schemas.ComplaintResponse)
 def get_complaint(id: int, db: Session = Depends(get_db)):
     complaint = db.query(Complaint).filter(Complaint.id == id).first()
     if not complaint:
         raise HTTPException(status_code=404, detail="Complaint not found")
     return complaint
 
-@app.get("/api/priority-issues", response_model=List[schemas.PriorityIssueResponse])
+@api_router.get("/priority-issues", response_model=List[schemas.PriorityIssueResponse])
 def get_priority_issues(db: Session = Depends(get_db)):
-    # Return high & critical priority issues
     issues = db.query(Complaint).filter(Complaint.priority_score >= 50).order_by(Complaint.priority_score.desc()).limit(20).all()
     return issues
 
-@app.get("/api/demand-hotspots")
+@api_router.get("/demand-hotspots")
 def get_demand_hotspots(db: Session = Depends(get_db)):
-    # Simplified hotspot aggregation for Day 2 (group by village)
     from sqlalchemy import func
     hotspots = db.query(
         Complaint.village,
@@ -255,8 +246,7 @@ def get_demand_hotspots(db: Session = Depends(get_db)):
         for h in hotspots
     ]
 
-
-@app.get("/api/government-insights", response_model=schemas.GovernmentInsightsResponse)
+@api_router.get("/government-insights", response_model=schemas.GovernmentInsightsResponse)
 def get_government_insights(db: Session = Depends(get_db)):
     total = db.query(Complaint).count()
     if total == 0:
@@ -283,7 +273,7 @@ def get_government_insights(db: Session = Depends(get_db)):
         average_priority_score=round(avg_score, 2)
     )
 
-@app.get("/api/ai-analysis", response_model=schemas.AIAnalysisStats)
+@api_router.get("/ai-analysis", response_model=schemas.AIAnalysisStats)
 def get_ai_analysis_stats(db: Session = Depends(get_db)):
     total = db.query(Complaint).count()
     if total == 0:
@@ -309,21 +299,27 @@ def get_ai_analysis_stats(db: Session = Depends(get_db)):
         severity_distribution={x[0] or "Unknown": x[1] for x in sev_dist}
     )
 
+# Include both /api and root paths for all API endpoints so all routing styles work
+app.include_router(api_router, prefix="/api")
+app.include_router(api_router)
+
 # =========================================================================
-# Serve Frontend (Local monolithic development fallback)
+# Serve Frontend
 # =========================================================================
 
 frontend_dist = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "frontend", "dist")
 
-if os.path.isdir(frontend_dist) and not os.environ.get("VERCEL"):
-    app.mount("/assets", StaticFiles(directory=os.path.join(frontend_dist, "assets")), name="assets")
+if os.path.isdir(frontend_dist):
+    assets_dir = os.path.join(frontend_dist, "assets")
+    if os.path.isdir(assets_dir):
+        app.mount("/assets", StaticFiles(directory=assets_dir), name="assets")
 
     @app.get("/{catchall:path}")
     def serve_frontend(catchall: str):
-        if catchall.startswith("api/"):
-            raise HTTPException(status_code=404, detail="API route not found")
         file_path = os.path.join(frontend_dist, catchall)
         if os.path.isfile(file_path):
             return FileResponse(file_path)
-        return FileResponse(os.path.join(frontend_dist, "index.html"))
-
+        index_file = os.path.join(frontend_dist, "index.html")
+        if os.path.isfile(index_file):
+            return FileResponse(index_file)
+        return {"status": "ok", "service": "CivicAI API"}
