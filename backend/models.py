@@ -69,3 +69,29 @@ class CitizenRequest(Base):
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     
     demographic = relationship("Demographic", back_populates="citizen_requests")
+
+class Complaint(Base):
+    __tablename__ = "complaints"
+
+    id = Column(Integer, primary_key=True, index=True)
+    
+    original_text = Column(String, nullable=False)
+    detected_language = Column(String, index=True)
+    translated_text = Column(String, nullable=True)
+    
+    sector = Column(String, index=True)
+    category = Column(String, index=True)
+    
+    village_code = Column(String, ForeignKey("demographics.village_code"), nullable=True, index=True)
+    village = Column(String, nullable=True) # Text extracted by AI
+    
+    urgency = Column(String)
+    severity = Column(String)
+    
+    priority_score = Column(Float, default=0.0)
+    priority_level = Column(String, default="Low")
+    status = Column(String, default="received")
+    
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+    
+    demographic = relationship("Demographic")

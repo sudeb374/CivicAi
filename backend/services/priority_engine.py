@@ -62,10 +62,22 @@ def calculate_priority_score(db: Session, request_data: dict) -> float:
     # 4. Citizen Demand (0-100)
     citizen_demand = 10.0
     if db and district and category:
-        count = db.query(CitizenRequest).filter(
+        from backend.models import Complaint
+        
+        count_cr = db.query(CitizenRequest).filter(
             CitizenRequest.district == district,
             CitizenRequest.category == category
         ).count()
+        
+        count_c = db.query(Complaint).join(
+            Demographic, Complaint.village_code == Demographic.village_code
+        ).filter(
+            Demographic.district_id == district,
+            Complaint.category == category
+        ).count()
+        
+        count = count_cr + count_c
+
         # Cap count normalization to 100 points (e.g., 20 complaints = 100 pts)
         citizen_demand = min((count / 20.0) * 100.0, 100.0)
 

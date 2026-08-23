@@ -94,3 +94,90 @@ def analyze_complaint(text: str) -> dict:
     except Exception as e:
         logger.error(f"Gemini API failed: {e}")
         return _demo_mode_analyze(text)
+
+def _demo_mode_analyze_v2(text: str) -> dict:
+    text_lower = text.lower()
+    
+    if any(c in text for c in ['অ', 'আ', 'ক', 'খ', 'গ']):
+        language = "bn"
+    elif any(c in text for c in ['अ', 'आ', 'क', 'ख', 'ग']):
+        language = "hi"
+    else:
+        language = "en"
+        
+    sector = "other"
+    category = "other"
+    
+    if "road" in text_lower or "pothole" in text_lower or "রাস্তা" in text_lower:
+        sector = "Roads"
+        category = "infrastructure"
+    elif "water" in text_lower or "pipe" in text_lower or "জল" in text_lower:
+        sector = "Water"
+        category = "utilities"
+    elif "health" in text_lower or "hospital" in text_lower or "হাসপাতাল" in text_lower:
+        sector = "Healthcare/Hospitals"
+        category = "health"
+    elif "school" in text_lower or "education" in text_lower:
+        sector = "Primary Education"
+        category = "education"
+        
+    urgency = "high" if "urgent" in text_lower else "medium"
+    severity = "major" if "urgent" in text_lower else "minor"
+    
+    return {
+        "language": language,
+        "translated_text": "Translated: " + text if language != "en" else None,
+        "sector": sector,
+        "category": category,
+        "location": "Kolkata" if "kolkata" in text_lower else None,
+        "urgency": urgency,
+        "severity": severity,
+        "summary": text[:50],
+        "recommended_action": "Investigate issue.",
+        "confidence": 0.8,
+        "demo_mode": True
+    }
+
+def analyze_complaint_v2(text: str) -> dict:
+    if not model:
+        return _demo_mode_analyze_v2(text)
+        
+    prompt = f"""
+    Analyze the following citizen complaint and extract the details in valid JSON format.
+    Do not include markdown tags like ```json, just output the raw JSON object.
+    
+    Complaint: "{text}"
+    
+    Required JSON structure:
+    {{
+      "language": "ISO 639-1 code (e.g., en, bn, hi)",
+      "translated_text": "English translation if original is not English, else null",
+      "sector": "one of: Roads, Water, Healthcare/Hospitals, Primary Education, Secondary Education, Electricity, Public Transport, Financial/ATM, other",
+      "category": "short category like pothole, broken pipe, missing teacher, etc.",
+      "location": "extracted location/village name, or null if missing",
+      "urgency": "low, medium, high, or critical",
+      "severity": "minor, major, or severe",
+      "summary": "Short 1-sentence summary in English",
+      "recommended_action": "Suggested action for government",
+      "confidence": 0.95 (float between 0 and 1)
+    }}
+    """
+    try:
+        response = model.generate_content(prompt)
+        result_text = response.text.strip()
+        if result_text.startswith("```json"):
+            result_text = result_text[7:-3]
+        elif result_text.startswith("```"):
+            result_text = result_text[3:-3]
+            
+        data = json.loads(result_text)
+        data["demo_mode"] = False
+        
+        valid_sectors = ["Roads", "Water", "Healthcare/Hospitals", "Primary Education", "Secondary Education", "Electricity", "Public Transport", "Financial/ATM", "other"]
+        if data.get("sector") not in valid_sectors:
+            data["sector"] = "other"
+            
+        return data
+    except Exception as e:
+        logger.error(f"Gemini API failed v2: {e}")
+        return _demo_mode_analyze_v2(text)

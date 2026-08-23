@@ -105,5 +105,50 @@ class InfrastructureSchema(BaseModel):
     govt_secondary_school: Optional[bool]
     pucca_road: Optional[bool]
     public_bus: Optional[bool]
-    atm: Optional[bool]
     has_hospital: Optional[bool]
+
+# Day 2 Schemas
+
+class ComplaintCreate(BaseModel):
+    text: str = Field(..., description="Raw citizen complaint text")
+    location: Optional[str] = Field(None, description="Optional location provided by the citizen")
+
+class ComplaintResponse(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+    id: int
+    original_text: str
+    detected_language: Optional[str]
+    translated_text: Optional[str]
+    sector: Optional[str]
+    category: Optional[str]
+    village: Optional[str]
+    village_code: Optional[str]
+    urgency: Optional[str]
+    severity: Optional[str]
+    priority_score: float
+    priority_level: str
+    status: str
+    created_at: datetime
+
+class PriorityIssueResponse(BaseModel):
+    id: int
+    sector: Optional[str]
+    category: Optional[str]
+    village: Optional[str]
+    priority_score: float
+    priority_level: str
+    summary: Optional[str]
+
+class GovernmentInsightsResponse(BaseModel):
+    total_complaints: int
+    resolved_complaints: int
+    sector_distribution: Dict[str, int]
+    urgency_distribution: Dict[str, int]
+    average_priority_score: float
+
+class AIAnalysisStats(BaseModel):
+    total_analyzed: int
+    language_distribution: Dict[str, int]
+    sector_distribution: Dict[str, int]
+    common_categories: Dict[str, int]
+    severity_distribution: Dict[str, int]

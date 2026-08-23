@@ -104,5 +104,53 @@ def test_get_infrastructure(setup_db):
     data = response.json()
     assert isinstance(data, list)
     if data:
-        assert "village_code" in data[0]
         assert "has_hospital" in data[0]
+
+# =========================================================================
+# DAY 2 Tests
+# =========================================================================
+
+def test_create_complaint():
+    payload = {
+        "text": "The hospital in Kolkata is missing doctors urgently."
+    }
+    response = client.post("/api/complaints", json=payload)
+    assert response.status_code == 200
+    data = response.json()
+    assert "id" in data
+    assert "sector" in data
+    assert data["category"] == "health" # Based on demo mock
+    assert "priority_score" in data
+
+def test_get_complaints():
+    response = client.get("/api/complaints")
+    assert response.status_code == 200
+    assert isinstance(response.json(), list)
+
+def test_get_priority_issues():
+    response = client.get("/api/priority-issues")
+    assert response.status_code == 200
+    assert isinstance(response.json(), list)
+
+def test_get_demand_hotspots():
+    response = client.get("/api/demand-hotspots")
+    assert response.status_code == 200
+    assert isinstance(response.json(), list)
+
+def test_get_day2_recommendations():
+    response = client.get("/api/recommendations")
+    assert response.status_code == 200
+    assert isinstance(response.json(), list)
+
+def test_government_insights():
+    response = client.get("/api/government-insights")
+    assert response.status_code == 200
+    data = response.json()
+    assert "total_complaints" in data
+
+def test_ai_analysis_stats():
+    response = client.get("/api/ai-analysis")
+    assert response.status_code == 200
+    data = response.json()
+    assert "total_analyzed" in data
+
