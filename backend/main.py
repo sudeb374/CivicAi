@@ -16,10 +16,17 @@ from backend.services.hotspot_service import get_hotspots
 from backend.services.recommendation_service import get_recommendations
 from backend.config import settings
 
-# Create DB tables
+from backend.scripts.seed_db import seed_database
+
+# Create DB tables and seed real data if database is new/empty
 Base.metadata.create_all(bind=engine)
+try:
+    seed_database()
+except Exception as e:
+    print(f"Warning: Database auto-seed encountered an issue: {e}")
 
 app = FastAPI(title=settings.PROJECT_NAME)
+
 
 # CORS
 app.add_middleware(
@@ -298,17 +305,20 @@ def get_ai_analysis_stats(db: Session = Depends(get_db)):
     )
 
 # =========================================================================
-# Serve Frontend
+# Serve Frontend (Local monolithic development fallback)
 # =========================================================================
 
 frontend_dist = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "frontend", "dist")
 
-if os.path.isdir(frontend_dist):
+if os.path.isdir(frontend_dist) and not os.environ.get("VERCEL"):
     app.mount("/assets", StaticFiles(directory=os.path.join(frontend_dist, "assets")), name="assets")
 
     @app.get("/{catchall:path}")
     def serve_frontend(catchall: str):
+        if catchall.startswith("api/"):
+            raise HTTPException(status_code=404, detail="API route not found")
         file_path = os.path.join(frontend_dist, catchall)
         if os.path.isfile(file_path):
             return FileResponse(file_path)
         return FileResponse(os.path.join(frontend_dist, "index.html"))
+
