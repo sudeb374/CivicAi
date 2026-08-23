@@ -1,1 +1,15 @@
-{"version": 2, "buildCommand": "cd frontend && npm install && npm run build", "outputDirectory": "frontend/dist", "rewrites": [{"source": "/api/(.*)", "destination": "/api/index.py"}, {"source": "/assets/(.*)", "destination": "/assets/$1"}, {"source": "/((?!api/|assets/|.*\\..*).*)", "destination": "/index.html"}], "functions": {"api/index.py": {"excludeFiles": "{frontend/**,docs/**,backend/tests/**,backend/data/raw/**,analyze_data.py,csv_analysis.json,excel_analysis.json}"}}}
+{
+  "version": 2,
+  "buildCommand": "cd frontend && npm install && npm run build",
+  "outputDirectory": "frontend/dist",
+  "rewrites": [
+    {
+      "source": "/assets/(.*)",
+      "destination": "/assets/$1"
+    },
+    {
+      "source": "/((?!api/|assets/|.*\\..*).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
