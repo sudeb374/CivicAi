@@ -5,7 +5,9 @@ from backend.config import settings
 
 db_url = settings.effective_database_url
 if db_url.startswith("postgres://"):
-    db_url = db_url.replace("postgres://", "postgresql://", 1)
+    db_url = db_url.replace("postgres://", "postgresql+psycopg2://", 1)
+elif db_url.startswith("postgresql://") and not db_url.startswith("postgresql+psycopg2://"):
+    db_url = db_url.replace("postgresql://", "postgresql+psycopg2://", 1)
 
 if "sqlite" in db_url:
     engine = create_engine(
