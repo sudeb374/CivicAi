@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { api } from '../services/api';
 import { Search, Filter, ShieldAlert } from 'lucide-react';
+import InteractiveIndiaMap from '../components/InteractiveIndiaMap';
 
 export default function Infrastructure() {
   const [loading, setLoading] = useState(true);
@@ -102,6 +103,9 @@ export default function Infrastructure() {
           )
         })}
       </div>
+
+      {/* Interactive National India Map */}
+      <InteractiveIndiaMap />
 
       <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm overflow-hidden flex flex-col h-[600px]">
         <div className="p-4 border-b border-slate-200 dark:border-slate-700 flex flex-col sm:flex-row justify-between items-center gap-4 bg-slate-50 dark:bg-slate-900">

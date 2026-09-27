@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
 @custom-variant dark (&:is(.dark *));
 
 body {
@@ -69,4 +70,57 @@ body {
 
 .animate-float {
   animation: float 4s ease-in-out infinite;
+}
+
+/* ========================================================================= */
+/* Interactive India Map (From interactive-india-maps HTML)                  */
+/* ========================================================================= */
+.india-svg-wrapper svg {
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+  display: block;
+  overflow: visible;
+}
+
+.india-svg-wrapper svg path.state {
+  fill: #ffffff !important; /* Pure white fill */
+  stroke: #1e293b !important; /* Crisp dark border */
+  stroke-width: 1.8px !important;
+  stroke-linejoin: round;
+  cursor: pointer;
+  transition: fill 0.2s ease, stroke 0.2s ease, filter 0.2s ease;
+}
+
+.dark .india-svg-wrapper svg path.state {
+  fill: #1e293b !important; /* Elegant dark slate in dark mode */
+  stroke: #94a3b8 !important; /* Light border in dark mode */
+  stroke-width: 1.8px !important;
+}
+
+/* Hover effect */
+.india-svg-wrapper svg path.state:hover {
+  fill: #f1f5f9 !important; /* Subtle soft highlight on hover */
+  stroke: #0f172a !important;
+  stroke-width: 2.2px !important;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
+}
+
+.dark .india-svg-wrapper svg path.state:hover {
+  fill: #334155 !important;
+  stroke: #e2e8f0 !important;
+}
+
+/* Currently selected state */
+.india-svg-wrapper svg path.state.state-selected {
+  fill: #2563eb !important; /* Distinct blue fill for selected state */
+  stroke: #1d4ed8 !important;
+  stroke-width: 2.5px !important;
+  filter: drop-shadow(0 4px 12px rgba(37, 99, 235, 0.45));
+}
+
+/* Labels remain non-interactive */
+.india-svg-wrapper svg path.label-text {
+  pointer-events: none;
+  fill: #0f172a;
 }

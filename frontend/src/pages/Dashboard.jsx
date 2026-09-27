@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { api } from '../services/api';
 import { Map, Users, Home, Activity, ShieldAlert, Sparkles, TrendingUp } from 'lucide-react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip, ResponsiveContainer } from 'recharts';
+import InteractiveIndiaMap from '../components/InteractiveIndiaMap';
 
 export default function Dashboard() {
   const [loading, setLoading] = useState(true);
@@ -183,6 +184,13 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
+
+      {/* Interactive India Map Section */}
+      <InteractiveIndiaMap 
+        complaints={complaints} 
+        demographics={demographics}
+        infrastructure={infrastructure}
+      />
     </div>
   );
 }
