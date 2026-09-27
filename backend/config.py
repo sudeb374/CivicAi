@@ -19,9 +19,7 @@ class Settings(BaseSettings):
 
     @property
     def effective_database_url(self) -> str:
-        if self.DATABASE_URL and self.DATABASE_URL.strip():
-            return self.DATABASE_URL.strip()
-        return get_default_database_url()
+        return "postgresql+psycopg2://civicai_db_kol4_user:HoFvUILLXrz8hKLyDq7LJTybdBb3lLLH@dpg-dasiq9fpn0mc738je090-a/civicai_db_kol4"
 
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
